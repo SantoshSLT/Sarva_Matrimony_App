@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+	android:background="@color/colorWhite"
+    android:layout_height="fill_parent"  >
+
+	<RelativeLayout
+        android:layout_width="match_parent"
+		android:paddingBottom="@dimen/fourtwo"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:id="@+id/linReligion"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/colorWhite"
+			android:visibility="visible"
+			android:orientation="vertical" >
+			<android.support.design.widget.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="@dimen/onefive"
+				android:paddingRight="@dimen/onefive"
+				android:layout_marginTop="@dimen/onezero"
+				android:theme="@style/EditTextviewStyle">
+
+				<EditText
+					android:id="@+id/edtSearchReligion"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="@string/Religion"
+					android:inputType="textFilter"
+					android:textSize="@dimen/onefour"
+					android:maxLines="1"
+					android:drawableRight="@android:drawable/ic_menu_search"
+					android:singleLine="true" />
+
+			</android.support.design.widget.TextInputLayout>
+
+			<android.support.v7.widget.RecyclerView
+				android:id="@+id/rvReligion"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginTop="@dimen/five"
+				android:layout_centerHorizontal="true"
+				android:background="@color/colorWhite"
+				android:scrollbars="vertical" />
+
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/linCaste"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/colorWhite"
+			android:visibility="gone"
+			android:orientation="vertical" >
+			<android.support.design.widget.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="@dimen/onefive"
+				android:paddingRight="@dimen/onefive"
+				android:layout_marginTop="@dimen/onezero"
+				android:theme="@style/EditTextviewStyle">
+
+				<EditText
+					android:id="@+id/edtSearchCaste"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="@string/Caste"
+					android:inputType="textFilter"
+					android:textSize="@dimen/onefour"
+					android:maxLines="1"
+					android:drawableRight="@android:drawable/ic_menu_search"
+					android:singleLine="true" />
+
+			</android.support.design.widget.TextInputLayout>
+
+			<android.support.v7.widget.RecyclerView
+				android:id="@+id/rvCaste"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginTop="@dimen/five"
+				android:layout_centerHorizontal="true"
+				android:background="@color/colorWhite"
+				android:scrollbars="vertical" />
+
+		</LinearLayout>
+
+
+
+		<LinearLayout
+			android:id="@+id/linMotherTongue"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/colorWhite"
+			android:visibility="gone"
+			android:orientation="vertical" >
+			<android.support.design.widget.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="@dimen/onefive"
+				android:paddingRight="@dimen/onefive"
+				android:layout_marginTop="@dimen/onezero"
+				android:theme="@style/EditTextviewStyle">
+
+				<EditText
+					android:id="@+id/edtSearchMotherTongue"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="@string/Mother_Tongue"
+					android:inputType="textFilter"
+					android:textSize="@dimen/onefour"
+					android:maxLines="1"
+					android:drawableRight="@android:drawable/ic_menu_search"
+					android:singleLine="true" />
+
+			</android.support.design.widget.TextInputLayout>
+
+			<android.support.v7.widget.RecyclerView
+				android:id="@+id/rvMotherTongue"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginTop="@dimen/five"
+				android:layout_centerHorizontal="true"
+				android:background="@color/colorWhite"
+				android:scrollbars="vertical" />
+
+		</LinearLayout>
+
+
+
+		<LinearLayout
+			android:id="@+id/linCountry"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/colorWhite"
+			android:visibility="gone"
+			android:orientation="vertical" >
+			<android.support.design.widget.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="@dimen/onefive"
+				android:paddingRight="@dimen/onefive"
+				android:layout_marginTop="@dimen/onezero"
+				android:theme="@style/EditTextviewStyle">
+
+				<EditText
+					android:id="@+id/edtSearchCountry"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="@string/Country"
+					android:inputType="textFilter"
+					android:textSize="@dimen/onefour"
+					android:maxLines="1"
+					android:drawableRight="@android:drawable/ic_menu_search"
+					android:singleLine="true" />
+
+			</android.support.design.widget.TextInputLayout>
+
+			<android.support.v7.widget.RecyclerView
+				android:id="@+id/rvCountry"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginTop="@dimen/five"
+				android:layout_centerHorizontal="true"
+				android:background="@color/colorWhite"
+				android:scrollbars="vertical" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/linState"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/colorWhite"
+			android:visibility="gone"
+			android:orientation="vertical" >
+			<android.support.design.widget.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="@dimen/onefive"
+				android:paddingRight="@dimen/onefive"
+				android:layout_marginTop="@dimen/onezero"
+				android:theme="@style/EditTextviewStyle">
+
+				<EditText
+					android:id="@+id/edtSearchState"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="State"
+					android:inputType="textFilter"
+					android:textSize="@dimen/onefour"
+					android:maxLines="1"
+					android:drawableRight="@android:drawable/ic_menu_search"
+					android:singleLine="true" />
+
+			</android.support.design.widget.TextInputLayout>
+
+			<android.support.v7.widget.RecyclerView
+				android:id="@+id/rvState"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginTop="@dimen/onezero"
+				android:layout_centerHorizontal="true"
+				android:background="@color/colorWhite"
+				android:scrollbars="vertical" />
+
+		</LinearLayout>
+
+
+
+
+		<LinearLayout
+			android:id="@+id/linCity"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/colorWhite"
+			android:visibility="gone"
+			android:orientation="vertical" >
+			<android.support.design.widget.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="@dimen/onefive"
+				android:paddingRight="@dimen/onefive"
+				android:layout_marginTop="@dimen/onezero"
+				android:theme="@style/EditTextviewStyle">
+
+				<EditText
+					android:id="@+id/edtSearchCity"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="City"
+					android:inputType="textFilter"
+					android:textSize="@dimen/onefour"
+					android:maxLines="1"
+					android:drawableRight="@android:drawable/ic_menu_search"
+					android:singleLine="true" />
+
+			</android.support.design.widget.TextInputLayout>
+
+			<android.support.v7.widget.RecyclerView
+				android:id="@+id/rvCity"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginTop="@dimen/five"
+				android:layout_centerHorizontal="true"
+				android:background="@color/colorWhite"
+				android:scrollbars="vertical" />
+
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/linHighestEducation"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/colorWhite"
+			android:visibility="gone"
+			android:orientation="vertical" >
+			<android.support.design.widget.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="@dimen/onefive"
+				android:paddingRight="@dimen/onefive"
+				android:layout_marginTop="@dimen/onezero"
+				android:theme="@style/EditTextviewStyle">
+
+				<EditText
+					android:id="@+id/edtSearchHighestEducation"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="Highest Education"
+					android:inputType="textFilter"
+					android:textSize="@dimen/onefour"
+					android:maxLines="1"
+					android:drawableRight="@android:drawable/ic_menu_search"
+					android:singleLine="true" />
+
+			</android.support.design.widget.TextInputLayout>
+
+			<android.support.v7.widget.RecyclerView
+				android:id="@+id/rvHighestEducation"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginTop="@dimen/five"
+				android:layout_centerHorizontal="true"
+				android:background="@color/colorWhite"
+				android:scrollbars="vertical" />
+
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/linOccupation"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/colorWhite"
+			android:visibility="gone"
+			android:orientation="vertical" >
+			<android.support.design.widget.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="@dimen/onefive"
+				android:paddingRight="@dimen/onefive"
+				android:layout_marginTop="@dimen/onezero"
+				android:theme="@style/EditTextviewStyle">
+
+				<EditText
+					android:id="@+id/edtSearchOccupation"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="Occupation"
+					android:inputType="textFilter"
+					android:textSize="@dimen/onefour"
+					android:maxLines="1"
+					android:drawableRight="@android:drawable/ic_menu_search"
+					android:singleLine="true" />
+
+			</android.support.design.widget.TextInputLayout>
+
+			<android.support.v7.widget.RecyclerView
+				android:id="@+id/rvOccupation"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginTop="@dimen/five"
+				android:layout_centerHorizontal="true"
+				android:background="@color/colorWhite"
+				android:scrollbars="vertical" />
+
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/linGeneralView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/colorWhite"
+			android:visibility="gone"
+			android:orientation="vertical" >
+
+			<android.support.v7.widget.RecyclerView
+				android:id="@+id/rvGeneralView"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginTop="@dimen/five"
+				android:layout_centerHorizontal="true"
+				android:background="@color/colorWhite"
+				android:scrollbars="vertical" />
+
+		</LinearLayout>
+	</RelativeLayout>
+
+
+
+	<LinearLayout
+		android:id="@+id/linAnnualIncome"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/colorWhite"
+		android:visibility="gone"
+		android:orientation="vertical" >
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="@dimen/onefive"
+			android:paddingRight="@dimen/onefive"
+			android:layout_marginTop="@dimen/onezero"
+			android:theme="@style/EditTextviewStyle"
+			android:visibility="gone">
+
+			<EditText
+                android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/Country"
+				android:inputType="textFilter"
+				android:textSize="@dimen/onefour"
+				android:maxLines="1"
+				android:drawableRight="@android:drawable/ic_menu_search"
+				android:singleLine="true"
+				android:visibility="gone"/>
+
+		</android.support.design.widget.TextInputLayout>
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/rvAnnualIncome"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="@dimen/five"
+			android:layout_centerHorizontal="true"
+			android:background="@color/colorWhite"
+			android:scrollbars="vertical" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/linMaritalStatus"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/colorWhite"
+		android:visibility="gone"
+		android:orientation="vertical" >
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="@dimen/onefive"
+			android:paddingRight="@dimen/onefive"
+			android:layout_marginTop="@dimen/onezero"
+			android:theme="@style/EditTextviewStyle"
+			android:visibility="gone">
+
+			<EditText
+				android:id="@+id/edtMaritalStatus"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/Country"
+				android:inputType="textFilter"
+				android:textSize="@dimen/onefour"
+				android:maxLines="1"
+				android:drawableRight="@android:drawable/ic_menu_search"
+				android:singleLine="true"
+				android:visibility="gone"/>
+
+		</android.support.design.widget.TextInputLayout>
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/rvMaritalStatus"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="@dimen/five"
+			android:layout_centerHorizontal="true"
+			android:background="@color/colorWhite"
+			android:scrollbars="vertical" />
+
+	</LinearLayout>
+
+
+	<LinearLayout
+		android:id="@+id/linPhysicalStatus"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/colorWhite"
+		android:visibility="gone"
+		android:orientation="vertical" >
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="@dimen/onefive"
+			android:paddingRight="@dimen/onefive"
+			android:layout_marginTop="@dimen/onezero"
+			android:theme="@style/EditTextviewStyle"
+			android:visibility="gone">
+
+			<EditText
+				android:id="@+id/edtPhysicalStatus"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/Country"
+				android:inputType="textFilter"
+				android:textSize="@dimen/onefour"
+				android:maxLines="1"
+				android:drawableRight="@android:drawable/ic_menu_search"
+				android:singleLine="true"
+				android:visibility="gone"/>
+
+		</android.support.design.widget.TextInputLayout>
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/rvPhysicalStatus"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="@dimen/five"
+			android:layout_centerHorizontal="true"
+			android:background="@color/colorWhite"
+			android:scrollbars="vertical" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/linStar"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/colorWhite"
+		android:visibility="gone"
+		android:orientation="vertical" >
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="@dimen/onefive"
+			android:paddingRight="@dimen/onefive"
+			android:layout_marginTop="@dimen/onezero"
+			android:theme="@style/EditTextviewStyle"
+			android:visibility="gone">
+
+			<EditText
+				android:id="@+id/edtStar"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/Country"
+				android:inputType="textFilter"
+				android:textSize="@dimen/onefour"
+				android:maxLines="1"
+				android:drawableRight="@android:drawable/ic_menu_search"
+				android:singleLine="true"
+				android:visibility="gone"/>
+
+		</android.support.design.widget.TextInputLayout>
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/rvStar"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="@dimen/five"
+			android:layout_centerHorizontal="true"
+			android:background="@color/colorWhite"
+			android:scrollbars="vertical" />
+
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/linSBCaste"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/colorWhite"
+		android:visibility="gone"
+		android:orientation="vertical" >
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="@dimen/onefive"
+			android:paddingRight="@dimen/onefive"
+			android:layout_marginTop="@dimen/onezero"
+			android:theme="@style/EditTextviewStyle">
+
+			<EditText
+                android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Sub Caste"
+				android:inputType="textFilter"
+				android:textSize="@dimen/onefour"
+				android:maxLines="1"
+				android:drawableRight="@android:drawable/ic_menu_search"
+				android:singleLine="true" />
+
+		</android.support.design.widget.TextInputLayout>
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/rvSBCaste"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="@dimen/onezero"
+			android:layout_centerHorizontal="true"
+			android:background="@color/colorWhite"
+			android:scrollbars="vertical" />
+
+	</LinearLayout>
+
+
+	<LinearLayout
+		android:id="@+id/linManglik"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/colorWhite"
+		android:visibility="gone"
+		android:orientation="vertical" >
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="@dimen/onefive"
+			android:paddingRight="@dimen/onefive"
+			android:layout_marginTop="@dimen/onezero"
+			android:theme="@style/EditTextviewStyle"
+			android:visibility="gone">
+
+			<EditText
+				android:id="@+id/edtManglik"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/Country"
+				android:inputType="textFilter"
+				android:textSize="@dimen/onefour"
+				android:maxLines="1"
+				android:drawableRight="@android:drawable/ic_menu_search"
+				android:singleLine="true"
+				android:visibility="gone"/>
+
+		</android.support.design.widget.TextInputLayout>
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/rvManglik"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="@dimen/five"
+			android:layout_centerHorizontal="true"
+			android:background="@color/colorWhite"
+			android:scrollbars="vertical" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/linDoshType"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/colorWhite"
+		android:visibility="gone"
+		android:orientation="vertical" >
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="@dimen/onefive"
+			android:paddingRight="@dimen/onefive"
+			android:layout_marginTop="@dimen/onezero"
+			android:theme="@style/EditTextviewStyle">
+
+			<!--<EditText
+				android:id="@+id/edtDoshType"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Sub Caste"
+				android:inputType="textFilter"
+				android:textSize="@dimen/onefour"
+				android:maxLines="1"
+
+				android:drawableRight="@android:drawable/ic_menu_search"
+				android:singleLine="true" />
+-->
+		</android.support.design.widget.TextInputLayout>
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/rvDoshType"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="@dimen/onezero"
+			android:layout_centerHorizontal="true"
+			android:background="@color/colorWhite"
+			android:scrollbars="vertical" />
+
+	</LinearLayout>
+
+
+	<Button
+		android:id="@+id/btnConfirm"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/fourzero"
+		android:layout_alignParentBottom="true"
+		android:background="@drawable/bg_orange_rectangle"
+		android:text="CONFIRM"
+		android:layout_gravity="center_horizontal"
+		android:textSize="@dimen/onezero"
+		android:textColor="@color/colorWhite" />
+
+	<ProgressBar
+		android:id="@+id/progressBarSlider4"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:visibility="gone"/>
+
+
+</RelativeLayout>

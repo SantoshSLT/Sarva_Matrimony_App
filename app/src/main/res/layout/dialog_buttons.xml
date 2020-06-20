@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/onezero"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="@dimen/twozero">
+
+
+            <Button
+                android:id="@+id/btnPhotoPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/fourfive"
+                android:background="@drawable/bg_orange_rounded_rectengle"
+                android:layout_gravity="center_horizontal"
+                android:text="Photo Password"
+                android:textAllCaps="false"
+                android:paddingLeft="@dimen/twofive"
+                android:paddingRight="@dimen/twofive"
+                android:paddingBottom="@dimen/five"
+                android:textSize="@dimen/onesix"
+                android:elevation="10dp"
+                android:layout_marginTop="@dimen/twozero"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/btnPhotoPasswordRequest"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/fourfive"
+                android:background="@drawable/bg_orange_rounded_rectengle"
+                android:layout_gravity="center_horizontal"
+                android:text="Photo Password Request"
+                android:textAllCaps="false"
+                android:paddingLeft="@dimen/onefive"
+                android:paddingRight="@dimen/onefive"
+                android:paddingBottom="@dimen/five"
+                android:textSize="@dimen/onesix"
+                android:elevation="10dp"
+                android:layout_marginTop="@dimen/twozero"
+                android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+</LinearLayout>

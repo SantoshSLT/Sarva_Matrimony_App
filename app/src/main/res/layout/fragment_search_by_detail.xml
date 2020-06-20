@@ -1,0 +1,586 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Fragments.SearchByDetailFragment">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_above="@+id/bottom">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="@dimen/twozero"
+              android:paddingBottom="@dimen/sevenzero"
+              android:orientation="vertical">
+
+              <RadioGroup
+                  android:id="@+id/radioGroup"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/twozero"
+                  android:orientation="horizontal"
+                  android:visibility="gone">
+                  <RadioButton
+                      android:id="@+id/radioMale"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/Male"
+                      android:textSize="@dimen/onetwo"
+                      android:buttonTint="@color/colorAA"
+                      android:checked="false" />
+
+                  <RadioButton
+                      android:id="@+id/radioFemale"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/Female"
+                      android:buttonTint="@color/colorAA"
+                      android:checked="false"
+                      android:textSize="@dimen/onetwo" />
+              </RadioGroup>
+
+
+              <LinearLayout
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/onezero"
+                  android:orientation="horizontal"
+                  android:weightSum="2.0">
+
+                  <android.support.design.widget.TextInputLayout
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginRight="@dimen/five"
+                      android:layout_weight="1.0"
+                      android:theme="@style/EditTextviewStyle">
+
+                      <EditText
+                          android:id="@+id/edtAgeM"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:drawableRight="@drawable/icon_next_spinner"
+                          android:focusable="false"
+                          android:hint="AGE FROM"
+                          android:fontFamily="@font/poppinsregular"
+                          android:inputType="text"
+                          android:maxLines="1"
+                          android:singleLine="true"
+                          android:textSize="@dimen/onetwo" />
+                  </android.support.design.widget.TextInputLayout>
+
+                  <android.support.design.widget.TextInputLayout
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="@dimen/five"
+                      android:layout_weight="1.0"
+                      android:theme="@style/EditTextviewStyle">
+
+                      <EditText
+                          android:id="@+id/edtAgeF"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:drawableRight="@drawable/icon_next_spinner"
+                          android:focusable="false"
+                          android:hint="AGE TO"
+                          android:fontFamily="@font/poppinsregular"
+                          android:inputType="text"
+                          android:maxLines="1"
+                          android:singleLine="true"
+                          android:textSize="@dimen/onetwo" />
+                  </android.support.design.widget.TextInputLayout>
+              </LinearLayout>
+
+
+              <LinearLayout
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/twozero"
+                  android:orientation="horizontal"
+                  android:weightSum="2.0">
+
+                  <android.support.design.widget.TextInputLayout
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginRight="@dimen/five"
+                      android:layout_weight="1.0"
+                      android:theme="@style/EditTextviewStyle">
+
+                      <EditText
+                          android:id="@+id/edtHeightM"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:drawableRight="@drawable/icon_next_spinner"
+                          android:focusable="false"
+                          android:hint="HEIGHT FROM"
+                          android:fontFamily="@font/poppinsregular"
+                          android:inputType="text"
+                          android:maxLines="1"
+                          android:singleLine="true"
+                          android:textSize="@dimen/onetwo" />
+                  </android.support.design.widget.TextInputLayout>
+
+                  <android.support.design.widget.TextInputLayout
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="@dimen/five"
+                      android:layout_weight="1.0"
+                      android:theme="@style/EditTextviewStyle">
+
+                      <EditText
+                          android:id="@+id/edtHeightF"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:drawableRight="@drawable/icon_next_spinner"
+                          android:focusable="false"
+                          android:hint="HEIGHT TO"
+                          android:fontFamily="@font/poppinsregular"
+                          android:inputType="text"
+                          android:maxLines="1"
+                          android:singleLine="true"
+                          android:textSize="@dimen/onetwo" />
+                  </android.support.design.widget.TextInputLayout>
+              </LinearLayout>
+
+
+              <android.support.design.widget.TextInputLayout
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/twozero"
+                  android:theme="@style/EditTextviewStyle">
+
+                  <EditText
+                      android:id="@+id/edtMaritalStatus"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:drawableRight="@drawable/icon_next_spinner"
+                      android:focusable="false"
+                      android:hint="MARITAL STATUS"
+                      android:fontFamily="@font/poppinsregular"
+                      android:inputType="textCapWords"
+                      android:maxLines="1"
+                      android:singleLine="true"
+                      android:textSize="@dimen/onetwo" />
+              </android.support.design.widget.TextInputLayout>
+
+              <android.support.design.widget.TextInputLayout
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/twozero"
+                  android:theme="@style/EditTextviewStyle">
+
+                  <EditText
+                      android:id="@+id/edtPhysicalStatus"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:drawableRight="@drawable/icon_next_spinner"
+                      android:focusable="false"
+                      android:hint="PHYSICAL STATUS"
+                      android:fontFamily="@font/poppinsregular"
+                      android:inputType="textCapWords"
+                      android:maxLines="1"
+                      android:singleLine="true"
+                      android:textSize="@dimen/onetwo" />
+              </android.support.design.widget.TextInputLayout>
+
+              <android.support.design.widget.TextInputLayout
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/onezero"
+                  android:theme="@style/EditTextviewStyle">
+
+                  <EditText
+                      android:id="@+id/edtReligion"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:drawableRight="@drawable/icon_next_spinner"
+                      android:focusable="false"
+                      android:hint="RELIGION"
+                      android:fontFamily="@font/poppinsregular"
+                      android:inputType="textCapWords"
+                      android:maxLines="1"
+                      android:singleLine="true"
+                      android:textSize="@dimen/onetwo" />
+              </android.support.design.widget.TextInputLayout>
+
+
+              <android.support.design.widget.TextInputLayout
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/twozero"
+                  android:theme="@style/EditTextviewStyle">
+
+                  <EditText
+                      android:id="@+id/edtCaste"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:drawableRight="@drawable/icon_next_spinner"
+                      android:focusable="false"
+                      android:hint="CASTE"
+                      android:fontFamily="@font/poppinsregular"
+                      android:inputType="textCapWords"
+                      android:maxLines="1"
+                      android:singleLine="true"
+                      android:textSize="@dimen/onetwo" />
+              </android.support.design.widget.TextInputLayout>
+
+              <android.support.design.widget.TextInputLayout
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/onezero"
+                  android:theme="@style/EditTextviewStyle">
+
+                  <EditText
+                      android:id="@+id/edtCountry"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:drawableRight="@drawable/icon_next_spinner"
+                      android:focusable="false"
+                      android:hint="COUNTRY"
+                      android:fontFamily="@font/poppinsregular"
+                      android:inputType="textCapWords"
+                      android:maxLines="1"
+                      android:singleLine="true"
+                      android:textSize="@dimen/onetwo" />
+              </android.support.design.widget.TextInputLayout>
+
+              <android.support.design.widget.TextInputLayout
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/twozero"
+                  android:theme="@style/EditTextviewStyle">
+
+                  <EditText
+                      android:id="@+id/edtState"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:drawableRight="@drawable/icon_next_spinner"
+                      android:focusable="false"
+                      android:hint="STATE"
+                      android:fontFamily="@font/poppinsregular"
+                      android:inputType="textCapWords"
+                      android:maxLines="1"
+                      android:singleLine="true"
+                      android:textSize="@dimen/onetwo" />
+              </android.support.design.widget.TextInputLayout>
+
+
+              <android.support.design.widget.TextInputLayout
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/twozero"
+                  android:theme="@style/EditTextviewStyle">
+
+                  <EditText
+                      android:id="@+id/edtCity"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:drawableRight="@drawable/icon_next_spinner"
+                      android:focusable="false"
+                      android:hint="CITY"
+                      android:fontFamily="@font/poppinsregular"
+                      android:inputType="textCapWords"
+                      android:maxLines="1"
+                      android:singleLine="true"
+                      android:textSize="@dimen/onetwo" />
+              </android.support.design.widget.TextInputLayout>
+
+
+              <android.support.design.widget.TextInputLayout
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/onezero"
+                  android:theme="@style/EditTextviewStyle">
+
+                  <EditText
+                      android:id="@+id/edtHighestEducation"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:drawableRight="@drawable/icon_next_spinner"
+                      android:focusable="false"
+                      android:hint="EDUCATION"
+                      android:fontFamily="@font/poppinsregular"
+                      android:inputType="textCapWords"
+                      android:maxLines="1"
+                      android:singleLine="true"
+                      android:textSize="@dimen/onetwo" />
+              </android.support.design.widget.TextInputLayout>
+
+
+              <android.support.design.widget.TextInputLayout
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/twozero"
+                  android:theme="@style/EditTextviewStyle">
+
+                  <EditText
+                      android:id="@+id/edtOccupation"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:drawableRight="@drawable/icon_next_spinner"
+                      android:focusable="false"
+                      android:hint="OCCUPATION"
+                      android:fontFamily="@font/poppinsregular"
+                      android:inputType="textCapWords"
+                      android:maxLines="1"
+                      android:singleLine="true"
+                      android:textSize="@dimen/onetwo" />
+              </android.support.design.widget.TextInputLayout>
+
+              <android.support.design.widget.TextInputLayout
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/twozero"
+                  android:theme="@style/EditTextviewStyle">
+
+                  <EditText
+                      android:id="@+id/edtAnnualIncome"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:drawableRight="@drawable/icon_next_spinner"
+                      android:focusable="false"
+                      android:hint="ANNUAL INCOME"
+                      android:fontFamily="@font/poppinsregular"
+                      android:inputType="textCapWords"
+                      android:maxLines="1"
+                      android:singleLine="true"
+                      android:textSize="@dimen/onetwo" />
+              </android.support.design.widget.TextInputLayout>
+              <android.support.design.widget.TextInputLayout
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/onezero"
+                  android:theme="@style/EditTextviewStyle">
+
+                  <EditText
+                      android:id="@+id/edtMotherTongue"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:drawableRight="@drawable/icon_next_spinner"
+                      android:focusable="false"
+                      android:hint="MOTHER TONGUE"
+                      android:fontFamily="@font/poppinsregular"
+                      android:inputType="textCapWords"
+                      android:maxLines="1"
+                      android:singleLine="true"
+                      android:textSize="@dimen/onetwo" />
+              </android.support.design.widget.TextInputLayout>
+
+              <android.support.design.widget.TextInputLayout
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/_15sdp"
+                  android:theme="@style/EditTextviewStyle">
+
+                  <EditText
+                      android:id="@+id/edtDiet"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:drawableRight="@drawable/icon_next_spinner"
+                      android:focusable="false"
+                      android:hint="DIET"
+                      android:inputType="textCapWords"
+                      android:maxLines="1"
+                      android:singleLine="true"
+                      android:fontFamily="@font/poppinsregular"
+                      android:textSize="@dimen/_12sdp" />
+              </android.support.design.widget.TextInputLayout>
+
+              <android.support.design.widget.TextInputLayout
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/onezero"
+                  android:theme="@style/EditTextviewStyle">
+
+                  <EditText
+                      android:id="@+id/edtSmoking"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:drawableRight="@drawable/icon_next_spinner"
+                      android:focusable="false"
+                      android:hint="SMOKING"
+                      android:inputType="textCapWords"
+                      android:maxLines="1"
+                      android:singleLine="true"
+                      android:fontFamily="@font/poppinsregular"
+                      android:textSize="@dimen/_12sdp" />
+              </android.support.design.widget.TextInputLayout>
+
+              <android.support.design.widget.TextInputLayout
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/onezero"
+
+                  android:theme="@style/EditTextviewStyle">
+
+                  <EditText
+                      android:id="@+id/edtDrinking"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:drawableRight="@drawable/icon_next_spinner"
+                      android:focusable="false"
+                      android:hint="DRINKING"
+                      android:inputType="textCapWords"
+                      android:maxLines="1"
+                      android:singleLine="true"
+                      android:fontFamily="@font/poppinsregular"
+                      android:textSize="@dimen/_12sdp" />
+              </android.support.design.widget.TextInputLayout>
+              <android.support.design.widget.TextInputLayout
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/onezero"
+                  android:theme="@style/EditTextviewStyle">
+
+                  <EditText
+                      android:id="@+id/edtRassi"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:drawableRight="@drawable/icon_next_spinner"
+                      android:focusable="false"
+                      android:hint="RASI/MOONSIGN"
+                      android:inputType="textCapWords"
+                      android:maxLines="1"
+                      android:singleLine="true"
+                      android:fontFamily="@font/poppinsregular"
+                      android:textSize="@dimen/_12sdp" />
+              </android.support.design.widget.TextInputLayout>
+
+              <android.support.design.widget.TextInputLayout
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/onezero"
+                  android:theme="@style/EditTextviewStyle">
+
+                  <EditText
+                      android:id="@+id/edtPhotoAvailable"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:drawableRight="@drawable/icon_next_spinner"
+                      android:focusable="false"
+                      android:hint="PHOTO AVAILABLE"
+                      android:inputType="textCapWords"
+                      android:maxLines="1"
+                      android:singleLine="true"
+                      android:fontFamily="@font/poppinsregular"
+                      android:textSize="@dimen/_12sdp" />
+              </android.support.design.widget.TextInputLayout>
+
+          </LinearLayout>
+      </ScrollView>
+
+      <LinearLayout
+          android:id="@+id/bottom"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:orientation="horizontal"
+          android:gravity="bottom"
+          android:layout_alignParentBottom="true"
+          android:background="@color/colorGray"
+          android:weightSum="4">
+
+          <Button
+              android:id="@+id/btnSaveSearch"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:layout_alignParentBottom="true"
+              android:background="@color/colorWhite"
+              android:padding="@dimen/eight"
+              android:text="Save Search"
+              android:layout_gravity="bottom"
+              android:drawableTop="@drawable/ic_add_orange_24dp"
+              android:textSize="@dimen/onezero"
+              android:textAllCaps="false"
+              android:layout_marginRight="@dimen/one"
+              android:textColor="@color/colorOrange" />
+
+          <Button
+              android:id="@+id/btnSavedSearch"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:layout_alignParentBottom="true"
+              android:background="@color/colorWhite"
+              android:padding="@dimen/eight"
+              android:text="Saved Search"
+              android:layout_gravity="bottom"
+              android:drawableTop="@drawable/ic_save_orange_24dp"
+              android:textSize="@dimen/onezero"
+              android:textAllCaps="false"
+              android:textColor="@color/colorOrange" />
+
+          <Button
+              android:id="@+id/btnGeneralSearch"
+              android:layout_width="0dp"
+              android:layout_weight="2"
+              android:layout_height="match_parent"
+              android:layout_alignParentBottom="true"
+              android:background="@drawable/bg_orange_rectangle"
+              android:text="Search Now"
+              android:layout_gravity="bottom"
+              android:textSize="@dimen/onetwo"
+              android:textColor="@color/colorWhite" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/sliding_page"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@color/red_transperant"
+          android:visibility="gone"
+          android:orientation="vertical">
+          <!-- android:background="@color/transparent" -->
+
+          <RelativeLayout
+              android:id="@+id/sliding_drawer"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ddd"
+              android:layout_marginLeft="@dimen/sevenfive"
+              android:orientation="vertical" >
+
+              <RelativeLayout
+                  android:id="@+id/layout1"
+                  android:layout_width="0dp"
+                  android:layout_height="fill_parent"
+                  android:background="@color/colorWhite" >
+              </RelativeLayout>
+              <include
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:visibility="visible"
+                  android:layout_toRightOf="@+id/layout1"
+                  layout="@layout/sliding_drowaer4" />
+          </RelativeLayout>
+      </LinearLayout>
+
+      <ImageView
+          android:id="@+id/btnMenuClose"
+          android:layout_width="@dimen/twozero"
+          android:layout_height="@dimen/twozero"
+          android:visibility="visible"
+          android:layout_marginTop="@dimen/onefive"
+          android:layout_marginLeft="@dimen/onezero"
+          android:src="@drawable/icon_arrow_left"/>
+
+      <ProgressBar
+          android:id="@+id/progressBar1"
+          android:layout_width="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:layout_centerInParent="true"
+          android:layout_marginTop="@dimen/oneonezero"
+          android:visibility="gone"
+          android:layout_height="wrap_content" />
+
+  </RelativeLayout>
+
+
+</FrameLayout>

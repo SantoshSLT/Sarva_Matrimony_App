@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardView"
+    android:orientation="vertical"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="@dimen/onezero"
+    android:padding="@dimen/onefive"
+    app:cardUseCompatPadding="true">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/onezero"
+        android:theme="@style/EditTextviewStyle">
+
+        <EditText
+            android:id="@+id/edtSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subject"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            android:textSize="@dimen/onetwo"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/onezero"
+        android:theme="@style/EditTextviewStyle">
+
+        <EditText
+            android:id="@+id/edtMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Message"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textSize="@dimen/onetwo"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_orange_rounded_rectengle"
+        android:layout_gravity="center_horizontal"
+        android:text="SEND"
+        android:textAllCaps="false"
+        android:paddingLeft="@dimen/twofive"
+        android:paddingRight="@dimen/twofive"
+        android:paddingTop="@dimen/five"
+        android:paddingBottom="@dimen/five"
+        android:textSize="@dimen/onetwo"
+        android:elevation="10dp"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/twozero"
+        android:textColor="@color/colorWhite" />
+
+</LinearLayout>

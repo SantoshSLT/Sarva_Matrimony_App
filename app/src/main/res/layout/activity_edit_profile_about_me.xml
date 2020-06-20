@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.thegreentech.EditedProfileactivities.EditProfileAboutMe">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include
+            layout="@layout/header1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/fivezero"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:gravity="center_vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:text="SOMTHING ABOUT YOU"
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:background="@drawable/border_round"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_gravity="left"
+        android:gravity="left"
+        >
+
+
+        <EditText
+            android:id="@+id/edtOtherInformatio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@null"
+            android:hint="WRITE HERE"
+            android:textColorHint="@color/transcolorOrange"
+            android:padding="5dp"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="@dimen/_12sdp"
+            android:inputType="text|textMultiLine|textCapSentences"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/fiveseven">
+        <Button
+            android:id="@+id/btnRegisterNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/onezero"
+            android:background="@drawable/bg_orange_rounded_rectengle"
+            android:paddingLeft="@dimen/_30sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_30sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="UPDATE"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/onetwo" />
+    </LinearLayout>
+</LinearLayout>

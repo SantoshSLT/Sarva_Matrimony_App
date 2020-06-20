@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/fivezero"
+            android:visibility="visible"
+            layout="@layout/header1" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:orientation="vertical">
+
+        <FrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:scrollbars="vertical"
+               />
+
+          <!--  <GridView
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:verticalSpacing="@dimen/_10sdp"
+                android:horizontalSpacing="0dp"
+                android:stretchMode="columnWidth"
+                android:numColumns="2"/>-->
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textEmptyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="?android:actionBarSize"
+        android:text="No plans available"/>
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:id="@+id/linDetailView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/fivezero"
+        android:visibility="gone"
+        android:background="@color/red_transperant"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/textSubHeader"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fourzero"
+            android:text="plan"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorOrange"
+            android:textSize="@dimen/onefour"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerPlan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorWhite"
+            android:scrollbars="vertical"
+            android:layout_below="@+id/textSubHeader"/>
+
+        <TextView
+            android:id="@+id/textClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/onezero"
+            android:layout_marginRight="@dimen/onezero"
+            android:layout_marginBottom="@dimen/onezero"
+            android:gravity="center"
+            android:text="Close"
+            android:background="@color/colorWhite"
+            android:textSize="@dimen/onesix"
+            android:padding="@dimen/five"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

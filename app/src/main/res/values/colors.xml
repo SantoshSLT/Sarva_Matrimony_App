@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#499202</color> <!--#558B2F -->
+    <color name="colorPrimaryDark">#FF387011</color><!--#FF387011-->
+    <color name="colorAccent">#FF2F5019</color><!--#FF2F5019-->
+    <!--<color name="colorPrimary">#C50061</color> &lt;!&ndash;#558B2F &ndash;&gt;-->
+    <!--<color name="colorPrimaryDark">#bc5185</color>&lt;!&ndash;#FF387011&ndash;&gt;-->
+    <!--<color name="colorAccent">#600531</color>&lt;!&ndash;#FF2F5019&ndash;&gt;-->
+
+
+    <color name="backgroundWhite">#F8F8F8</color>
+    <color name="transparnt">#00000000</color>
+
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="colorDarkGray">#212121</color>
+    <color name="colorDarkGrayH">#666666</color>
+    <color name="colorOrange">#EF6C00</color>
+    <color name="transcolorOrange">#55EF6C00</color>
+    <color name="transcolorOrange1">#88EF6C00</color>
+
+
+
+    <color name="text_color">#68d200</color>
+    <color name="text_1">#09A935</color>
+    <!--<color name="colorOrange">#0217db</color>&lt;!&ndash;#EF6C00&ndash;&gt;
+    <color name="colorOrange1">#2a3ffc</color> &lt;!&ndash;#FF9800&ndash;&gt;-->
+
+    <color name="grey8">#F2F2F2</color>
+    <color name="colorOrangeH">#ac4f02</color>
+    <color name="colorGray">#ffcfcfcf</color>
+    <color name="colorGray1">#EEEEEE</color>
+    <color name="red_transperant">#50000000</color>
+    <color name="colorTransparent">#00000000</color>
+
+    <color name="lighttransparent">#22000000</color>
+
+    <color name="colorBlack">#FF000000</color>
+    <color name="colorAA">#ffaaaaaa</color>
+    <color name="colorGreen">#005500</color>
+    <!--<color name="colorRed">#ffFF0000</color>-->
+    <color name="colorRed">#ff001a</color>
+    <!--<color name="colorPhone">#ff0070C0</color>-->
+
+
+    <color name="lightblack">#636363</color>
+    <color name="lightblack1">#303030</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#FF111010</color>
+    <color name="offBlack">#FF4C4A4A</color>
+
+
+    <color name="grey_1">#E1E1E1</color>
+    <color name="grey0">#e2e2e2</color>
+    <color name="grey2">#707070</color>
+    <color name="grey3">#b1babed0</color>
+    <color name="grey9">#CDCDCD</color>
+
+
+</resources>

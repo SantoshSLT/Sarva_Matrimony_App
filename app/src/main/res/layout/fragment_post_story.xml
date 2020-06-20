@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/header">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/twozero"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/threezero">
+
+            <!--  <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:gravity="center"
+                  android:layout_marginTop="@dimen/_10sdp">
+
+                  <com.thegreentech.PorterShape.PorterShapeImageView
+                      android:id="@+id/ivProfile"
+                      android:layout_width="@dimen/_100sdp"
+                      android:layout_height="@dimen/_115sdp"
+                      android:layout_gravity="left|center"
+                      app:siShape="@drawable/image_round_background"
+                      app:siSquare="true" />
+
+
+              </LinearLayout>-->
+
+            <RelativeLayout
+                android:id="@+id/rlAddImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_130sdp"
+                android:layout_gravity="center"
+                android:background="@color/grey8"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/ivAddicon"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/photo_placeholder"
+                    android:tint="@color/grey9" />
+
+                <TextView
+                    android:id="@+id/tvuploadPhot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivAddicon"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/poppinsregular"
+                    android:gravity="center"
+                    android:text="Upload Wedding Photo"
+                    android:textSize="@dimen/_14sdp" />
+
+
+                <ImageView
+                    android:id="@+id/ivCoverPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/onezero"
+                android:theme="@style/EditTextviewStyle">
+
+                <EditText
+                    android:id="@+id/edtBrideID"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:drawableRight="@drawable/icon_next_spinner"
+                    android:focusable="false"
+                    android:hint="BRIDE ID"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="@dimen/onetwo" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/onezero"
+                android:theme="@style/EditTextviewStyle">
+
+                <EditText
+                    android:id="@+id/edtBrideName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:hint="BRIDE NAME"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="@dimen/onetwo" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/onezero"
+                android:theme="@style/EditTextviewStyle">
+
+                <EditText
+                    android:id="@+id/edtGroomId"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:drawableRight="@drawable/icon_next_spinner"
+                    android:focusable="false"
+                    android:hint="GROOM ID"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="@dimen/onetwo" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/onezero"
+                android:theme="@style/EditTextviewStyle">
+
+                <EditText
+                    android:id="@+id/edtGroomName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:hint="GROOM NAME"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="@dimen/onetwo" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/onefive"
+                android:theme="@style/EditTextviewStyle">
+
+                <EditText
+                    android:id="@+id/edtEngagementDate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@color/colorWhite"
+                    android:focusable="false"
+                    android:fontFamily="@font/poppinsregular"
+                    android:hint="ENGAGEMENT DATE "
+                    android:inputType="date|textUri"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/onetwo" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/onefive"
+                android:theme="@style/EditTextviewStyle">
+
+                <EditText
+                    android:id="@+id/edtMarriageDate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@color/colorWhite"
+                    android:focusable="false"
+                    android:fontFamily="@font/poppinsregular"
+                    android:hint="MARRIAGE DATE"
+                    android:inputType="date|textUri"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/onetwo" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/onezero"
+                android:theme="@style/EditTextviewStyle">
+
+                <EditText
+                    android:id="@+id/edtCountry"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/icon_next_spinner"
+                    android:focusable="false"
+                    android:fontFamily="@font/poppinsregular"
+                    android:hint="COUNTRY LIVING IN"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/onetwo" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/onezero"
+                android:theme="@style/EditTextviewStyle">
+
+                <EditText
+                    android:id="@+id/edtAddress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="ADDRESS"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="@dimen/onetwo" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/border_round"
+                android:gravity="left"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/edtStory"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left|top"
+                    android:background="@null"
+                    android:fontFamily="@font/poppinsregular"
+                    android:gravity="top"
+                    android:hint="Write Success Story"
+                    android:inputType="text|textMultiLine|textCapSentences"
+                    android:padding="5dp"
+                    android:textColorHint="@color/transcolorOrange"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/onezero"
+                android:background="@drawable/bg_orange_rounded_rectengle"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_30sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_30sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="POST"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/onetwo" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/sliding_page"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/red_transperant"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/sliding_drawer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/sevenfive"
+            android:background="#ffdddddd"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout1"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/colorWhite" />
+
+            <include
+                layout="@layout/sliding_drowaer1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@id/layout1"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <!--
+        <ImageView
+            android:id="@+id/btnMenuClose"
+            android:layout_width="@dimen/twozero"
+            android:layout_height="@dimen/twozero"
+            android:layout_marginLeft="@dimen/onezero"
+            android:layout_marginTop="@dimen/onefive"
+            android:src="@drawable/icon_arrow_left"
+            android:visibility="visible" />
+    -->
+</RelativeLayout>

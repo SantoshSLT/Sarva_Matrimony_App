@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <LinearLayout
+        android:id="@+id/nav_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/onethreezero"
+        android:background="@color/grey8"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_10sdp">
+
+            <!--<ImageView
+                android:id="@+id/imgUserPhotos"
+                android:layout_width="@dimen/sevenfive"
+                android:layout_height="@dimen/sevenfive"
+                android:layout_gravity="center"
+                 />
+-->
+            <com.thegreentech.PorterShape.PorterShapeImageView
+                android:id="@+id/imgUserPhotos"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                app:siShape="@drawable/image_round_background"
+                app:siSquare="true" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textUserCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/lightblack1"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/textUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:text="fgfgfgfg"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/colorOrange"
+                android:textSize="@dimen/_20sdp" />
+            <!--android:layout_marginTop="@dimen/four"-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="-5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Membership Status: "
+                    android:fontFamily="@font/poppinsregular"
+                    android:textColor="@color/lightblack1"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/tvMemberStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_gravity="left|center"
+                    android:gravity="center|left"
+                    android:inputType="text|textMultiLine|textCapSentences"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textColor="@color/lightblack1"
+                    android:textSize="@dimen/_12sdp"/>
+                <!--android:layout_marginTop="@dimen/four"-->
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/nav_header_container"
+        android:orientation="vertical">
+
+        <ExpandableListView
+            android:id="@+id/expandableListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/_15sdp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0.5dp"
+            android:groupIndicator="@null" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relMoreCMSView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/red_transperant"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:id="@+id/linSlidingDrawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:padding="@dimen/onefive">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textCMSTitle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five"
+                android:gravity="left"
+                android:text="Terms and Conditions"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/onesix" />
+
+            <ImageView
+                android:id="@+id/textClose"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icn_close"/>
+
+            </LinearLayout>
+
+            <WebView
+                android:id="@+id/textCMSContaints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_gravity="left"
+                android:paddingBottom="@dimen/_15sdp"
+                ></WebView>
+          <!--  <TextView
+                android:id="@+id/textCMSContaints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/onefive"
+                android:gravity="left"
+                android:paddingBottom="@dimen/threezero"
+                android:text="-"
+                android:textColor="@color/colorAA"
+                android:textSize="@dimen/onetwo"/>-->
+
+        </LinearLayout>
+
+<!--
+        <TextView
+            android:id="@+id/textClose"
+            android:layout_width="@dimen/sixfive"
+            android:layout_height="@dimen/fourfive"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="@string/close"
+            android:textColor="@color/colorOrange"
+            android:textSize="@dimen/onezero" />
+-->
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

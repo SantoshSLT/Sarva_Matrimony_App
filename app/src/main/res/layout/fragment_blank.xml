@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Fragments.Search_M_IDFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/twozero"
+        android:paddingBottom="@dimen/sevenzero"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_marginTop="@dimen/onezero"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:theme="@style/EditTextviewStyle">
+
+            <EditText
+                android:id="@+id/edtMatriId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:hint="Enter Matri Id"
+                android:textColor="@color/lightblack1"
+                android:fontFamily="@font/poppinsregular"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="@dimen/onetwo"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnSearchByMatriId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/onezero"
+            android:background="@drawable/bg_orange_rounded_rectengle"
+            android:paddingLeft="@dimen/_40sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_40sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="Search"
+            android:textAllCaps="false"
+            android:fontFamily="@font/poppinsregular"
+            android:textColor="@color/white"
+            android:textSize="@dimen/onetwo" />
+
+
+    </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

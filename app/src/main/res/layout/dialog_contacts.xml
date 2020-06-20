@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/onezero"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/_7sdp"
+    android:elevation="@dimen/_7sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/onezero"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppinsregular"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_5sdp"
+            android:singleLine="true"
+            android:text="Your Contact Balance"
+            android:textColor="@color/lightblack1"
+            android:textSize="@dimen/_16sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textAlradyMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/colorOrange"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone" />
+
+            <!--Contact details have been alrady seen.-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/onezero"
+                android:fontFamily="@font/poppinsregular"
+                android:gravity="center"
+                android:text="Remaining Contacts"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/textRemainingContacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five"
+                android:fontFamily="@font/poppinsregular"
+                android:gravity="center"
+                android:text="199 / 200"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/onezero"
+                android:fontFamily="@font/poppinsregular"
+                android:gravity="center"
+                android:text="You want to see contact details?"
+                android:textColor="@color/lightblack1"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/onefive"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/btnYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/bg_green_rectengle"
+                    android:elevation="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_25sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_25sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="YES"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/onefour" />
+
+                <TextView
+                    android:id="@+id/btnNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/bg_orange_selected"
+                    android:elevation="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_25sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_25sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="NO "
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/onefour" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

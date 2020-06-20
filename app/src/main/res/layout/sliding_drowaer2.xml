@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"  >
+
+	<LinearLayout
+		android:id="@+id/linState"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/colorWhite"
+		android:orientation="vertical" >
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="@dimen/onefive"
+			android:paddingRight="@dimen/onefive"
+			android:layout_marginTop="@dimen/onezero"
+			android:theme="@style/EditTextviewStyle">
+
+			<EditText
+				android:id="@+id/edtSearchState"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="State"
+				android:inputType="textFilter"
+				android:textSize="@dimen/onefour"
+				android:maxLines="1"
+				android:drawableRight="@android:drawable/ic_menu_search"
+				android:singleLine="true" />
+
+		</android.support.design.widget.TextInputLayout>
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/rvState"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="@dimen/onezero"
+			android:layout_centerHorizontal="true"
+			android:background="@color/colorWhite"
+			android:scrollbars="vertical" />
+
+	</LinearLayout>
+
+
+
+
+	<LinearLayout
+		android:id="@+id/linCity"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/colorWhite"
+		android:visibility="gone"
+		android:orientation="vertical" >
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="@dimen/onefive"
+			android:paddingRight="@dimen/onefive"
+			android:layout_marginTop="@dimen/onezero"
+			android:theme="@style/EditTextviewStyle">
+
+			<EditText
+				android:id="@+id/edtSearchCity"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="City"
+				android:inputType="textFilter"
+				android:textSize="@dimen/onefour"
+				android:maxLines="1"
+				android:drawableRight="@android:drawable/ic_menu_search"
+				android:singleLine="true" />
+
+		</android.support.design.widget.TextInputLayout>
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/rvCity"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="@dimen/five"
+			android:layout_centerHorizontal="true"
+			android:background="@color/colorWhite"
+			android:scrollbars="vertical" />
+
+	</LinearLayout>
+
+
+
+
+
+	<LinearLayout
+		android:id="@+id/linHighestEducation"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/colorWhite"
+		android:visibility="gone"
+		android:orientation="vertical" >
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="@dimen/onefive"
+			android:paddingRight="@dimen/onefive"
+			android:layout_marginTop="@dimen/onezero"
+			android:theme="@style/EditTextviewStyle">
+
+			<EditText
+				android:id="@+id/edtSearchHighestEducation"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Highest Education"
+				android:inputType="textFilter"
+				android:textSize="@dimen/onefour"
+				android:maxLines="1"
+				android:drawableRight="@android:drawable/ic_menu_search"
+				android:singleLine="true" />
+
+		</android.support.design.widget.TextInputLayout>
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/rvHighestEducation"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="@dimen/five"
+			android:layout_centerHorizontal="true"
+			android:background="@color/colorWhite"
+			android:scrollbars="vertical" />
+
+	</LinearLayout>
+
+
+	<LinearLayout
+		android:id="@+id/linAdditionalDegree"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/colorWhite"
+		android:visibility="gone"
+		android:orientation="vertical" >
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="@dimen/onefive"
+			android:paddingRight="@dimen/onefive"
+			android:layout_marginTop="@dimen/onezero"
+			android:theme="@style/EditTextviewStyle">
+
+			<EditText
+				android:id="@+id/edtSearchAdditionalDegree"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Additional Degree"
+				android:inputType="textFilter"
+				android:textSize="@dimen/onefour"
+				android:maxLines="1"
+				android:drawableRight="@android:drawable/ic_menu_search"
+				android:singleLine="true" />
+
+		</android.support.design.widget.TextInputLayout>
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/rvAdditionalDegree"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="@dimen/five"
+			android:layout_centerHorizontal="true"
+			android:background="@color/colorWhite"
+			android:scrollbars="vertical" />
+
+	</LinearLayout>
+
+
+	<LinearLayout
+		android:id="@+id/linOccupation"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/colorWhite"
+		android:visibility="gone"
+		android:orientation="vertical" >
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="@dimen/onefive"
+			android:paddingRight="@dimen/onefive"
+			android:layout_marginTop="@dimen/onezero"
+			android:theme="@style/EditTextviewStyle">
+
+			<EditText
+				android:id="@+id/edtSearchOccupation"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Occupation"
+				android:inputType="textFilter"
+				android:textSize="@dimen/onefour"
+				android:maxLines="1"
+				android:drawableRight="@android:drawable/ic_menu_search"
+				android:singleLine="true" />
+
+		</android.support.design.widget.TextInputLayout>
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/rvOccupation"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="@dimen/five"
+			android:layout_centerHorizontal="true"
+			android:background="@color/colorWhite"
+			android:scrollbars="vertical" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/linSBCaste"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/colorWhite"
+		android:visibility="gone"
+		android:orientation="vertical" >
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="@dimen/onefive"
+			android:paddingRight="@dimen/onefive"
+			android:layout_marginTop="@dimen/onezero"
+			android:theme="@style/EditTextviewStyle">
+
+			<EditText
+                android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Sub Caste"
+				android:inputType="textFilter"
+				android:textSize="@dimen/onefour"
+				android:maxLines="1"
+
+				android:drawableRight="@android:drawable/ic_menu_search"
+				android:singleLine="true" />
+
+		</android.support.design.widget.TextInputLayout>
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/rvSBCaste"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="@dimen/onezero"
+			android:layout_centerHorizontal="true"
+			android:background="@color/colorWhite"
+			android:scrollbars="vertical" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/linMotherTongue"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/colorWhite"
+		android:visibility="gone"
+		android:orientation="vertical" >
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="@dimen/_10sdp"
+			android:paddingRight="@dimen/_10sdp"
+			android:layout_marginTop="@dimen/_15sdp"
+			android:layout_marginBottom="@dimen/_15sdp"
+			android:theme="@style/EditTextviewStyle">
+
+			<EditText
+				android:id="@+id/edtSearchMotherTongue"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/Mother_Tongue"
+				android:inputType="textFilter"
+				android:textSize="@dimen/_12sdp"
+				android:fontFamily="@font/poppinsregular"
+				android:maxLines="1"
+				android:drawableRight="@drawable/ic_menu_search"
+				android:singleLine="true" />
+
+		</android.support.design.widget.TextInputLayout>
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/rvMotherTongue"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="@dimen/five"
+			android:layout_centerHorizontal="true"
+			android:layout_marginLeft="@dimen/_10sdp"
+			android:background="@color/colorWhite"
+			android:scrollbars="vertical" />
+
+	</LinearLayout>
+
+
+	<LinearLayout
+		android:id="@+id/linGeneralView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/colorWhite"
+		android:visibility="gone"
+		android:orientation="vertical" >
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/rvGeneralView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="@dimen/five"
+			android:layout_centerHorizontal="true"
+			android:background="@color/colorWhite"
+			android:scrollbars="vertical" />
+
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/linDoshType"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/colorWhite"
+		android:visibility="gone"
+		android:orientation="vertical" >
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="@dimen/onefive"
+			android:paddingRight="@dimen/onefive"
+			android:layout_marginTop="@dimen/onezero"
+			android:theme="@style/EditTextviewStyle">
+
+			<!--<EditText
+				android:id="@+id/edtDoshType"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Sub Caste"
+				android:inputType="textFilter"
+				android:textSize="@dimen/onefour"
+				android:maxLines="1"
+
+				android:drawableRight="@android:drawable/ic_menu_search"
+				android:singleLine="true" />
+-->
+		</android.support.design.widget.TextInputLayout>
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/rvDoshType"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="@dimen/onezero"
+			android:layout_centerHorizontal="true"
+			android:background="@color/colorWhite"
+			android:scrollbars="vertical" />
+
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/linSendMessage"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/colorWhite"
+		android:visibility="gone"
+		android:orientation="vertical" >
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="@dimen/onefive"
+			android:paddingRight="@dimen/onefive"
+			android:layout_marginTop="@dimen/onezero"
+			android:theme="@style/EditTextviewStyle">
+
+			<EditText
+				android:id="@+id/edtSearchsendMessage"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Name"
+				android:inputType="textFilter"
+				android:textSize="@dimen/onefour"
+				android:maxLines="1"
+				android:drawableRight="@android:drawable/ic_menu_search"
+				android:singleLine="true" />
+
+		</android.support.design.widget.TextInputLayout>
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/rvSendMessage"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="@dimen/five"
+			android:layout_centerHorizontal="true"
+			android:background="@color/colorWhite"
+			android:scrollbars="vertical" />
+
+	</LinearLayout>
+
+
+	<Button
+		android:id="@+id/btnConfirm"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/fourzero"
+		android:layout_alignParentBottom="true"
+		android:background="@drawable/bg_orange_rectangle"
+		android:text="CONFIRM"
+		android:layout_gravity="center_horizontal"
+		android:textSize="@dimen/onezero"
+		android:textColor="@color/colorWhite" />
+
+
+	<ProgressBar
+		android:id="@+id/progressBarSlider2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:visibility="gone"/>
+
+
+
+</RelativeLayout>

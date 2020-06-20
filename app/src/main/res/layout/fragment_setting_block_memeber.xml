@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    app:cardCornerRadius="0dp"
+    app:cardUseCompatPadding="true">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fourzero"
+        android:background="@color/colorRed"
+        android:gravity="center"
+        android:text="BLOCK MEMBERS"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/onefour" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/onezero"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/onezero"
+                android:layout_marginTop="@dimen/onezero"
+                android:layout_marginRight="@dimen/onezero"
+                android:theme="@style/EditTextviewStyle">
+
+                <EditText
+                    android:id="@+id/edtEmailId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Enter_Email_Id_Or_Username"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/onetwo" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/onezero"
+                android:layout_marginTop="@dimen/twofive"
+                android:layout_marginRight="@dimen/onezero"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnBlock"
+                    android:layout_width="@dimen/fourzero"
+                    android:layout_height="@dimen/fourzero"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="2"
+                    android:background="@drawable/bg_orange_rounded_corner"
+                    android:text="BLOCK"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/onezero" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <!--   <android.support.v7.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/onezero">-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerBlockedUser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorWhite"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:id="@+id/textEmptyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No Records"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone" />
+
+    <!--</android.support.v7.widget.CardView>-->
+</LinearLayout>

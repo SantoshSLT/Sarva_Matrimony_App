@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/fivezero"
+            android:visibility="visible"
+            layout="@layout/header1" />
+    </LinearLayout>
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/header"
+       android:orientation="vertical">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/fourzero"
+           android:text="You Have Selected Plan"
+           android:gravity="center"
+           android:textColor="@color/colorWhite"
+           android:background="@color/colorOrange"
+           android:textSize="@dimen/onefour"/>
+
+       <android.support.v7.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+
+           <android.support.v7.widget.RecyclerView
+               android:id="@+id/recyclerPlan"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_centerHorizontal="true"
+               android:background="@color/colorWhite"
+               android:scrollbars="vertical"
+               android:visibility="gone"/>
+
+       </android.support.v7.widget.CardView>
+
+       <ProgressBar
+           android:id="@+id/progressBar1"
+           android:layout_width="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:layout_centerInParent="true"
+           android:layout_height="wrap_content" />
+
+
+
+
+
+
+       <!--Gone-->
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               >
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:id="@+id/textPlanName"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="  Welcome"
+                       android:drawableLeft="@drawable/ic_price"
+                       android:layout_marginLeft="@dimen/five"
+                       android:layout_marginTop="@dimen/onezero"
+                       android:inputType="textCapCharacters"
+                       android:gravity="center_vertical"
+                       android:textColor="@color/colorOrange"
+                       android:textSize="@dimen/onefour"/>
+
+                   <View
+                       android:layout_width="match_parent"
+                       android:layout_height="0.5dp"
+                       android:layout_marginTop="@dimen/five"
+                       android:layout_marginLeft="@dimen/onezero"
+                       android:layout_marginRight="@dimen/onezero"
+                       android:background="@color/colorGray"/>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:weightSum="3"
+                       android:paddingTop="@dimen/five"
+                       android:paddingLeft="@dimen/onezero"
+                       android:paddingRight="@dimen/onezero"
+                       android:orientation="horizontal">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="2"
+                           android:text="Plan Duration"
+                           android:textColor="@color/colorBlack"
+                           android:textSize="@dimen/onetwo"/>
+
+                       <TextView
+                           android:id="@+id/textPlanDuration"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:text=":  30 Days"
+                           android:gravity="center_vertical"
+                           android:textColor="@color/colorAA"
+                           android:textSize="@dimen/onetwo"/>
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:weightSum="3"
+                       android:paddingTop="@dimen/five"
+                       android:paddingLeft="@dimen/onezero"
+                       android:paddingRight="@dimen/onezero"
+                       android:orientation="horizontal">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="2"
+                           android:text="Total Amount"
+                           android:textColor="@color/colorBlack"
+                           android:textSize="@dimen/onetwo"/>
+
+                       <TextView
+                           android:id="@+id/textTotalAmount"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:text=":  Rs.200"
+                           android:gravity="center_vertical"
+                           android:textColor="@color/colorAA"
+                           android:textSize="@dimen/onetwo"/>
+                   </LinearLayout>
+
+                   <Button
+                       android:id="@+id/btnBuyNow"
+                       android:layout_width="match_parent"
+                       android:layout_height="@dimen/fourzero"
+                       android:background="@drawable/bg_orange_rounded_corner"
+                       android:text="BUY NOW"
+                       android:layout_gravity="center_horizontal"
+                       android:textSize="@dimen/onezero"
+                       android:layout_marginTop="@dimen/onezero"
+                       android:layout_marginLeft="@dimen/twofive"
+                       android:layout_marginRight="@dimen/twofive"
+                       android:layout_marginBottom="@dimen/onezero"
+                       android:textColor="@color/colorWhite" />
+               </LinearLayout>
+
+           </LinearLayout>
+
+       <!--</android.support.v7.widget.CardView>-->
+
+   </LinearLayout>
+
+
+
+
+</RelativeLayout>

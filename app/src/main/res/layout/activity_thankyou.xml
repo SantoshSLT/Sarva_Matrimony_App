@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundWhite"
+    tools:context="com.thegreentech.Thankyou">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/header1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/fivezero"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="@dimen/onefive"
+        android:layout_marginTop="@dimen/threefive"
+        android:layout_marginRight="@dimen/onefive"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Thank you for register"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="@dimen/twothree" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twofive"
+            android:gravity="center"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Note: - "
+            android:textSize="@dimen/onetwo" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twofive"
+                android:gravity="center|left"
+                android:fontFamily="@font/poppinsregular"
+                android:text="Please verify your email id from your registered email.check confirmation mail and click confirmation link."
+                android:textSize="@dimen/onetwo" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/fourzero"
+            android:background="@drawable/bg_orange_rounded_rectengle"
+            android:elevation="10dp"
+            android:paddingLeft="@dimen/_30sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_30sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="@string/login_now"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/onetwo" />
+    </LinearLayout>
+
+</RelativeLayout>

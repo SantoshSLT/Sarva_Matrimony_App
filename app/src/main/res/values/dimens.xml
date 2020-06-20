@@ -1,0 +1,51 @@
+<resources>
+
+    <dimen name="one">1dp</dimen>
+    <dimen name="two">2dp</dimen>
+    <dimen name="three">3dp</dimen>
+    <dimen name="four">4dp</dimen>
+    <dimen name="five">5dp</dimen>
+    <dimen name="six">6dp</dimen>
+    <dimen name="seven">7dp</dimen>
+    <dimen name="eight">8dp</dimen>
+    <dimen name="nine">9dp</dimen>
+    <dimen name="onezero">10dp</dimen>
+    <dimen name="oneone">11dp</dimen>
+    <dimen name="onetwo">12dp</dimen>
+    <dimen name="onethree">13dp</dimen>
+    <dimen name="onefour">14dp</dimen>
+    <dimen name="onefive">15dp</dimen>
+    <dimen name="onesix">16dp</dimen>
+    <dimen name="oneseven">17dp</dimen>
+    <dimen name="oneeight">18dp</dimen>
+    <dimen name="onenine">19dp</dimen>
+    <dimen name="twozero">20dp</dimen>
+    <dimen name="twothree">23dp</dimen>
+    <dimen name="twofive">25dp</dimen>
+    <dimen name="twoseven">27dp</dimen>
+    <dimen name="twonine">29dp</dimen>
+    <dimen name="threezero">30dp</dimen>
+    <dimen name="threethree">33dp</dimen>
+    <dimen name="threefive">35dp</dimen>
+    <dimen name="threeeight">38dp</dimen>
+    <dimen name="threenine">39dp</dimen>
+    <dimen name="fourzero">40dp</dimen>
+    <dimen name="fourtwo">42dp</dimen>
+    <dimen name="fourfive">45dp</dimen>
+    <dimen name="foureight">48dp</dimen>
+    <dimen name="fournine">49dp</dimen>
+    <dimen name="fivezero">50dp</dimen>
+    <dimen name="fivefive">55dp</dimen>
+    <dimen name="fiveseven">57dp</dimen>
+    <dimen name="fiveeight">58dp</dimen>
+    <dimen name="sixnine">69dp</dimen>
+    <dimen name="sevenzero">70dp</dimen>
+    <dimen name="sevenfive">75dp</dimen>
+    <dimen name="eightzero">80dp</dimen>
+    <dimen name="nineeight">98dp</dimen>
+    <dimen name="oneonezero">110dp</dimen>
+    <dimen name="onethreezero">130dp</dimen>
+    <dimen name="onesixzero">160dp</dimen>
+    <dimen name="twotwozero">220dp</dimen>
+
+</resources>

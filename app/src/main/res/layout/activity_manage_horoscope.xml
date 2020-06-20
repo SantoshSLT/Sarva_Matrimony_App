@@ -1,0 +1,231 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/header1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/fivezero"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/accept_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/nav_header_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:background="@color/grey8"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/_10sdp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.thegreentech.PorterShape.PorterShapeImageView
+                            android:id="@+id/imgUserPhoto"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_90sdp"
+                            android:layout_gravity="left|center"
+                            app:siShape="@drawable/image_round_background"
+                            app:siSquare="true" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textMatriId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/onezero"
+                            android:fontFamily="@font/poppinsregular"
+                            android:paddingRight="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_2sdp"
+                            android:text=""
+                            android:textColor="@color/lightblack1"
+                            android:textSize="@dimen/_10sdp" />
+
+
+                        <TextView
+                            android:id="@+id/textUsername"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_minus5sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/colorOrange"
+                            android:textSize="@dimen/_15sdp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppinsregular"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Upload photo of \nyour kundali/ Horoscope here"
+                    android:textColor="@color/lightblack1"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                    <com.thegreentech.PorterShape.PorterShapeImageView
+                        android:id="@+id/imgUserPhotos"
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="@dimen/_240sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        app:siShape="@drawable/image_round_background"
+                        app:siSquare="true" />
+
+
+                <!--<ImageView
+                    android:id="@+id/imgUserPhotos"
+                    android:layout_width="@dimen/threezerozero"
+                    android:layout_height="@dimen/threezerozero"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/onezero"
+                    android:src="@drawable/male" />-->
+
+
+                <ProgressBar
+                    android:id="@+id/progressBar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/oneonezero"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/btnUploadPhotos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_green_rectengle"
+                        android:fontFamily="@font/poppinsregular"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/_30sdp"
+                        android:paddingTop="@dimen/_6sdp"
+                        android:paddingRight="@dimen/_30sdp"
+                        android:paddingBottom="@dimen/_6sdp"
+                        android:text="Upload "
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <TextView
+                        android:id="@+id/btnDelete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:background="@drawable/bg_round_red"
+                        android:fontFamily="@font/poppinsregular"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/_25sdp"
+                        android:paddingTop="@dimen/_6sdp"
+                        android:paddingRight="@dimen/_25sdp"
+                        android:paddingBottom="@dimen/_6sdp"
+                        android:text="Delete"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_14sdp" />
+
+
+                    <!-- <Button
+                         android:id="@+id/btnUploadPhotos"
+                         android:layout_width="match_parent"
+                         android:layout_height="@dimen/fourzero"
+                         android:layout_gravity="center_horizontal"
+                         android:background="@drawable/bg_orange_rounded_corner"
+                         android:text="UPLOAD PHOTO"
+                         android:textColor="@color/colorWhite"
+                         android:textSize="@dimen/onezero" />
+
+                     <Button
+                         android:id="@+id/btnDelete"
+                         android:layout_width="@dimen/fourzero"
+                         android:layout_height="@dimen/threezero"
+                         android:layout_centerVertical="true"
+                         android:layout_gravity="center_horizontal"
+                         android:layout_marginTop="@dimen/onezero"
+                         android:background="@drawable/bg_light_red_rounded"
+                         android:drawableLeft="@drawable/ic_delete1"
+                         android:paddingLeft="@dimen/onetwo" />
+         -->
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

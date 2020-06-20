@@ -1,0 +1,753 @@
+<resources>
+    <string name="app_name">Sarva Matrimony</string>
+    <string name="go_back">Are you sure want to go back?</string>
+    <string name="Login">LOGIN</string>
+    <string name="Sign_Up">REGISTER FREE</string>
+    <string name="data_not_avelable">Data not available</string>
+    <string name="Registration">REGISTRATION</string>
+    <string name="Indias_most_trusted_matrimony_app">India\'s most trusted \nPremium Matrimony app</string>
+    <string name="login_now">LOGIN</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="forgot_password1">Forgot Password</string>
+    <string name="Please_enter_username_and_password">Please enter email id and password.</string>
+    <string name="Please_enter_username">Please enter email id.</string>
+    <string name="Please_enter_password">Please enter password.</string>
+    <string name="Please_Wait">Please Wait...</string>
+    <string name="Please_enter_valid_email_address">Please enter valid email address</string>
+    <string name="Enter_Email_Id_Or_Username">Enter Email Id Or Username</string>
+    <string name="Submit">SUBMIT</string>
+    <string name="Profile_Created_By">PROFILE CREATED FOR</string>
+    <string name="Gender">Gender</string>
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+    <string name="Religion">Religion</string>
+    <string name="Caste">Caste</string>
+    <string name="Mother_Tongue">Mother Tongue</string>
+    <string name="Country">Country</string>
+    <string name="Country_Code">Country Code</string>
+
+    <string name="Verify_continue">VERIFY &amp; CONTINUE</string>
+    <string name="edit">EDIT</string>
+    <string name="edit_mobile_no">Edit Mobile No</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="Please_enter_your_register_your_mobile_no">Please enter your register your mobile no.</string>
+    <string name="CONTINUE">CONTINUE</string>
+
+
+    <string-array name="arr_marital_status">
+        <item>Never Married</item>
+        <item>Widower</item>
+        <item>Divorced</item>
+        <item>Awaiting Divorce</item>
+    </string-array>
+
+    <string-array name="arr_marital_status1">
+        <item>Never Married</item>
+        <item>Widower</item>
+        <item>Divorced</item>
+        <item>Awaiting Divorce</item>
+        <item>Doesn\'t Matter</item>
+    </string-array>
+
+    <string-array name="arr_no_of_children">
+        <item>No Children</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4+</item>
+
+    </string-array>
+
+
+    <string-array name="arr_height">
+        <item>48</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+        <item>60</item>
+        <item>61</item>
+        <item>62</item>
+        <item>63</item>
+        <item>64</item>
+        <item>65</item>
+        <item>66</item>
+        <item>67</item>
+        <item>68</item>
+        <item>69</item>
+        <item>70</item>
+        <item>71</item>
+        <item>72</item>
+        <item>73</item>
+        <item>74</item>
+        <item>75</item>
+        <item>76</item>
+        <item>77</item>
+        <item>78</item>
+        <item>79</item>
+        <item>80</item>
+        <item>81</item>
+        <item>82</item>
+        <item>83</item>
+        <item>84</item>
+        <item>89</item>
+    </string-array>
+
+
+    <string-array name="arr_weight">
+        <item>40 Kg</item>
+        <item>41 Kg</item>
+        <item>42 Kg</item>
+        <item>43 Kg</item>
+        <item>44 Kg</item>
+        <item>45 Kg</item>
+        <item>46 Kg</item>
+        <item>47 Kg</item>
+        <item>48 Kg</item>
+        <item>49 Kg</item>
+        <item>50 Kg</item>
+        <item>51 Kg</item>
+        <item>52 Kg</item>
+        <item>53 Kg</item>
+        <item>54 Kg</item>
+        <item>55 Kg</item>
+        <item>56 Kg</item>
+        <item>57 Kg</item>
+        <item>58 Kg</item>
+        <item>59 Kg</item>
+        <item>60 Kg</item>
+        <item>61 Kg</item>
+        <item>62 Kg</item>
+        <item>63 Kg</item>
+        <item>64 Kg</item>
+        <item>65 Kg</item>
+        <item>66 Kg</item>
+        <item>67 Kg</item>
+        <item>68 Kg</item>
+        <item>69 Kg</item>
+        <item>70 Kg</item>
+        <item>71 Kg</item>
+        <item>72 Kg</item>
+        <item>73 Kg</item>
+        <item>74 Kg</item>
+        <item>75 Kg</item>
+        <item>76 Kg</item>
+        <item>77 Kg</item>
+        <item>78 Kg</item>
+        <item>79 Kg</item>
+        <item>80 Kg</item>
+        <item>81 Kg</item>
+        <item>82 Kg</item>
+        <item>83 Kg</item>
+        <item>84 Kg</item>
+        <item>85 Kg</item>
+        <item>86 Kg</item>
+        <item>87 Kg</item>
+        <item>88 Kg</item>
+        <item>89 Kg</item>
+        <item>90 Kg</item>
+        <item>91 Kg</item>
+        <item>92 Kg</item>
+        <item>93 Kg</item>
+        <item>94 Kg</item>
+        <item>95 Kg</item>
+        <item>96 Kg</item>
+        <item>97 Kg</item>
+        <item>98 Kg</item>
+        <item>99 Kg</item>
+        <item>100 Kg</item>
+        <item>101 Kg</item>
+        <item>102 Kg</item>
+        <item>103 Kg</item>
+        <item>104 Kg</item>
+        <item>105 Kg</item>
+        <item>106 Kg</item>
+        <item>107 Kg</item>
+        <item>108 Kg</item>
+        <item>109 Kg</item>
+        <item>110 Kg</item>
+        <item>111 Kg</item>
+        <item>112 Kg</item>
+        <item>113 Kg</item>
+        <item>114 Kg</item>
+        <item>115 Kg</item>
+        <item>116 Kg</item>
+        <item>117 Kg</item>
+        <item>118 Kg</item>
+        <item>119 Kg</item>
+        <item>120 Kg</item>
+        <item>121 Kg</item>
+        <item>122 Kg</item>
+        <item>123 Kg</item>
+        <item>124 Kg</item>
+        <item>125 Kg</item>
+        <item>126 Kg</item>
+        <item>127 Kg</item>
+        <item>128 Kg</item>
+        <item>129 Kg</item>
+        <item>130 Kg</item>
+        <item>131 Kg</item>
+        <item>132 Kg</item>
+        <item>133 Kg</item>
+        <item>134 Kg</item>
+        <item>135 Kg</item>
+        <item>136 Kg</item>
+        <item>137 Kg</item>
+        <item>138 Kg</item>
+        <item>139 Kg</item>
+        <item>140 Kg</item>
+    </string-array>
+
+    <string-array name="arr_body_type">
+        <item>Slim</item>
+        <item>Average</item>
+        <item>Athletic</item>
+        <item>Heavy</item>
+    </string-array>
+
+    <string-array name="arr_physical_status">
+        <item>Normal</item>
+        <item>Physically Challenged</item>
+    </string-array>
+
+    <string-array name="arr_physical_status1">
+        <item>Normal</item>
+        <item>Physically Challenged</item>
+        <item>Doesn\'t Matter</item>
+    </string-array>
+
+
+    <string-array name="arr_Employed_in">
+        <item>Government</item>
+        <item>Private</item>
+        <item>Business</item>
+        <item>Defence</item>
+        <item>Self Employed</item>
+    </string-array>
+
+    <string-array name="arr_Chiled_leaving_status">
+        <item>Living with me</item>
+        <item> Not living with me</item>
+    </string-array>
+
+
+    <string-array name="arr_annual_income">
+        <item>Rs 10,000 - 50,000</item>
+        <item>Rs 50,000 - 1,00,000</item>
+        <item>Rs 1,00,000 - 2,00,000</item>
+        <item>Rs 2,00,000 - 4,00,000</item>
+        <item>Rs 4,00,000 - 6,00,000</item>
+        <item>Rs 6,00,000 - 8,00,000</item>
+        <item>Rs 8,00,000 - 10,00,000</item>
+        <item>Rs 10,00,000 - 12,00,000</item>
+        <item>Rs 12,00,000 - 14,00,000</item>
+        <item>Rs 14,00,000 - 16,00,000</item>
+        <item>Rs 16,00,000 - 18,00,000</item>
+        <item>Rs 18,00,000 - 20,00,000</item>
+        <item>Rs 20,00,000 - 22,00,000</item>
+        <item>Rs 22,00,000 - 24,00,000</item>
+        <item>Rs 24,00,000 - 26,00,000</item>
+        <item>Rs 26,00,000 - 28,00,000</item>
+        <item>Rs 28,00,000 - 30,00,000</item>
+        <item>Rs 30,00,000 - 32,00,000</item>
+        <item>Rs 32,00,000 - 34,00,000</item>
+        <item>Rs 34,00,000 - 36,00,000</item>
+        <item>Rs 36,00,000 - 38,00,000</item>
+        <item>Rs 38,00,000 - 40,00,000</item>
+        <item>Rs 40,00,000 - 42,00,000</item>
+        <item>Rs 42,00,000 - 44,00,000</item>
+        <item>Rs 44,00,000 - 46,00,000</item>
+        <item>Rs 46,00,000 - 48,00,000</item>
+        <item>Rs 48,00,000 - 50,00,000</item>
+        <item>Rs 50,00,000 - 52,00,000</item>
+        <item>Rs 52,00,000 - 54,00,000</item>
+        <item>Rs 54,00,000 - 56,00,000</item>
+        <item>Rs 56,00,000 - 58,00,000</item>
+        <item>Rs 58,00,000 - 60,00,000</item>
+        <item>Rs 60,00,000 - 62,00,000</item>
+        <item>Rs 62,00,000 - 64,00,000</item>
+        <item>Rs 64,00,000 - 66,00,000</item>
+        <item>Rs 66,00,000 - 68,00,000</item>
+        <item>Rs 68,00,000 - 70,00,000</item>
+        <item>Rs 70,00,000 - 72,00,000</item>
+        <item>Rs 72,00,000 - 74,00,000</item>
+        <item>Rs 74,00,000 - 76,00,000</item>
+        <item>Rs 76,00,000 - 78,00,000</item>
+        <item>Rs 78,00,000 - 80,00,000</item>
+        <item>Rs 80,00,000 - 82,00,000</item>
+        <item>Rs 82,00,000 - 84,00,000</item>
+        <item>Rs 84,00,000 - 86,00,000</item>
+        <item>Rs 86,00,000 - 88,00,000</item>
+        <item>Rs 88,00,000 - 90,00,000</item>
+        <item>Rs 90,00,000 - 92,00,000</item>
+        <item>Rs 92,00,000 - 94,00,000</item>
+        <item>Rs 94,00,000 - 96,00,000</item>
+        <item>Rs 96,00,000 - 98,00,000</item>
+        <item>Rs 98,00,000 - 1,00,00,000</item>
+        <item>Above Rs 1,00,00,000</item>
+        <item>Not Working</item>
+        <item>Doesn \'t Matter</item>
+    </string-array>
+
+    <string-array name="arr_diet_2">
+
+        <item>Vegetarian</item>
+        <item>Non-Vegetarian</item>
+        <item>Eggetarian</item>
+
+    </string-array>
+
+
+    <string-array name="arr_diet">
+        <item>Any</item>
+        <item>Vegetarian</item>
+        <item>Non-Vegetarian</item>
+        <item>Eggetarian</item>
+
+    </string-array>
+
+
+    <string-array name="arr_smoking_2">
+        <item>Yes</item>
+        <item>No</item>
+        <item>Occasionally</item>
+
+    </string-array>
+
+    <string-array name="arr_smoking_3">
+        <item>Yes</item>
+        <item>No</item>
+        <item>Occasionally</item>
+        <item>Doesn\'t Matter</item>
+    </string-array>
+
+    <string-array name="photo_available">
+        <item>Yes</item>
+        <item>No</item>
+        <item>Doesn\'t Matter</item>
+
+    </string-array>
+
+    <string-array name="arr_drinking_2">
+        <item>Yes</item>
+        <item>No</item>
+        <item>Drinks Socially</item>
+
+    </string-array>
+
+    <string-array name="arr_drinking_3">
+        <item>Yes</item>
+        <item>No</item>
+        <item>Drinks Socially</item>
+        <item>Doesn\'t Matter</item>
+    </string-array>
+
+    <!--
+    <string-array name="arr_have_dosh">
+        <item>Yes</item>
+        <item>No</item>
+        <item>Doesn\'t Matter</item>
+    </string-array>-->
+
+    <string-array name="arr_star">
+        <item>Any</item>
+        <item>ANUSHAM</item>
+        <item>ASWINI</item>
+        <item>AVITTAM</item>
+        <item>AYILYAM</item>
+        <item>BHARANI</item>
+        <item>CHITHIRAI</item>
+        <item>HASTHAM</item>
+        <item>KETTAI</item>
+        <item>KRITHIGAI</item>
+        <item>MAHAM</item>
+        <item>MOOLAM</item>
+        <item>MRIGASIRISHAM</item>
+        <item>POOSAM</item>
+        <item>PUNARPUSAM</item>
+        <item>PURADAM</item>
+        <item>PURAM</item>
+        <item>PURATATHI</item>
+        <item>REVATHI</item>
+        <item>ROHINI</item>
+        <item>SADAYAM</item>
+        <item>SWATHI</item>
+        <item>THIRUVADIRAI</item>
+        <item>THIRUVONAM</item>
+        <item>UTHRADAM</item>
+        <item>UTHRAM</item>
+        <item>UTHRATADHI</item>
+        <item>VISAKAM</item>
+    </string-array>
+
+
+    <string-array name="arr_raasi_moon_sign">
+        <item>Mithun (Gemini)</item>
+        <item>Does not matter</item>
+        <item>Mesh (Aries)</item>
+        <item>Vrishabh (Taurus)</item>
+        <item>Mithun (Gemini)</item>
+        <item>Karka (Cancer)</item>
+        <item>Simha (Leo)</item>
+        <item>Kanya (Virgo)</item>
+        <item>Tula (Libra)</item>
+        <item>Vrischika (Scorpio)</item>
+        <item>Dhanu (Sagittarious)</item>
+        <item>Makar (Capricorn)</item>
+        <item>Kumbha (Aquarious)</item>
+        <item>Meen (Pisces)</item>
+    </string-array>
+
+    <string-array name="arr_family_status">
+        <item>Middle class</item>
+        <item>Upper middle class</item>
+        <item>Rich</item>
+        <item>Affluent</item>
+    </string-array>
+
+    <string-array name="arr_family_type">
+        <item>Joint</item>
+        <item>Nuclear</item>
+    </string-array>
+
+    <string-array name="arr_family_value">
+        <item>Orthodox</item>
+        <item>Traditional</item>
+        <item>Moderate</item>
+        <item>Liberal</item>
+    </string-array>
+
+    <string-array name="arr_brothers">
+        <item>No Brothers</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4+</item>
+    </string-array>
+
+    <string-array name="arr_married_brothers">
+        <item>No married brother</item>
+        <item>1 married brother</item>
+        <item>2 married brothers</item>
+        <item>3 married brothers</item>
+        <item>4 married brothers</item>
+        <item>4+ married brothers</item>
+    </string-array>
+
+    <string-array name="arr_sisters">
+        <item>No Sisters</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4+</item>
+    </string-array>
+
+    <string-array name="arr_married_sisters">
+        <item>No married sister</item>
+        <item>1 married sister</item>
+        <item>2 married sisters</item>
+        <item>3 married sisters</item>
+        <item>4 married sisters</item>
+        <item>4+ married sisters</item>
+    </string-array>
+
+    <string-array name="arr_age">
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+        <item>60</item>
+        <item>more than 60 </item>
+
+    </string-array>
+
+
+    <string-array name="arr_manglik_2">
+        <item>No</item>
+        <item>Yes</item>
+        <item>Do not Know</item>
+    </string-array>
+
+    <string-array name="arr_manglik">
+        <item>No</item>
+        <item>Yes</item>
+        <item>Doesn \'t Matter</item>
+    </string-array>
+
+
+    <string-array name="arr_manglik_type">
+        <item>Manglik</item>
+        <item>Sarpa-dosh</item>
+        <item>Kala-sarpa-dosh</item>
+        <item>Rahu-dosh</item>
+        <item>Kethu-dosh</item>
+        <item>Kalathra-dosh</item>
+    </string-array>
+
+
+    <string-array name="arr_country_code">
+        <item>Code</item>
+        <item>+91</item>
+        <item>+93</item>
+        <item>+355</item>
+        <item>+213</item>
+        <item>+684</item>
+        <item>+376</item>
+        <item>+244</item>
+        <item>+1</item>
+        <item>+54</item>
+        <item>+374</item>
+        <item>+61</item>
+        <item>+43</item>
+        <item>+994</item>
+        <item>+973</item>
+        <item>+880</item>
+        <item>+375</item>
+        <item>+32</item>
+        <item>+501</item>
+        <item>+975</item>
+        <item>+591</item>
+        <item>+387</item>
+        <item>+267</item>
+        <item>+55</item>
+        <item>+673</item>
+        <item>+359</item>
+        <item>+226</item>
+        <item>+257</item>
+        <item>+225</item>
+        <item>+855</item>
+        <item>+237</item>
+        <item>+238</item>
+        <item>+236</item>
+        <item>+235</item>
+        <item>+56</item>
+        <item>+86</item>
+        <item>+57</item>
+        <item>+269</item>
+        <item>+242</item>
+        <item>+682</item>
+        <item>+506</item>
+        <item>+385</item>
+        <item>+53</item>
+        <item>+357</item>
+        <item>+420</item>
+        <item>+850</item>
+        <item>+243</item>
+        <item>+45</item>
+        <item>+253</item>
+        <item>+670</item>
+        <item>+593</item>
+        <item>+20</item>
+        <item>+503</item>
+        <item>+240</item>
+        <item>+291</item>
+        <item>+372</item>
+        <item>+251</item>
+        <item>+500</item>
+        <item>+298</item>
+        <item>+679</item>
+        <item>+358</item>
+        <item>+33</item>
+        <item>+594</item>
+        <item>+689</item>
+        <item>+241</item>
+        <item>+220</item>
+        <item>+995</item>
+        <item>+49</item>
+        <item>+233</item>
+        <item>+350</item>
+        <item>+30</item>
+        <item>+299</item>
+        <item>+590</item>
+        <item>+502</item>
+        <item>+224</item>
+        <item>+245</item>
+        <item>+592</item>
+        <item>+509</item>
+        <item>+504</item>
+        <item>+852</item>
+        <item>+36</item>
+        <item>+354</item>
+
+        <item>+62</item>
+        <item>+98</item>
+        <item>+964</item>
+        <item>+353</item>
+        <item>+972</item>
+        <item>+39</item>
+        <item>+81</item>
+        <item>+962</item>
+        <item>+7</item>
+        <item>+254</item>
+        <item>+686</item>
+        <item>+82</item>
+        <item>+965</item>
+        <item>+996</item>
+        <item>+856</item>
+        <item>+371</item>
+        <item>+961</item>
+        <item>+266</item>
+        <item>+231</item>
+        <item>+218</item>
+        <item>+423</item>
+        <item>+370</item>
+        <item>+352</item>
+        <item>+853</item>
+        <item>+261</item>
+        <item>+265</item>
+        <item>+60</item>
+        <item>+960</item>
+        <item>+223</item>
+        <item>+356</item>
+        <item>+596</item>
+        <item>+222</item>
+        <item>+230</item>
+        <item>+269</item>
+        <item>+52</item>
+        <item>+691</item>
+        <item>+373</item>
+        <item>+377</item>
+        <item>+976</item>
+        <item>+212</item>
+        <item>+258</item>
+        <item>+95</item>
+        <item>+264</item>
+        <item>+674</item>
+        <item>+977</item>
+        <item>+31</item>
+        <item>+599</item>
+        <item>+687</item>
+        <item>+64</item>
+        <item>+505</item>
+        <item>+227</item>
+        <item>+234</item>
+        <item>+683</item>
+        <item>+672</item>
+        <item>+47</item>
+        <item>+968</item>
+        <item>+92</item>
+        <item>+507</item>
+        <item>+675</item>
+        <item>+595</item>
+        <item>+51</item>
+        <item>+63</item>
+        <item>+672</item>
+        <item>+48</item>
+        <item>+351</item>
+        <item>+974</item>
+        <item>+262</item>
+        <item>+40</item>
+        <item>+7</item>
+        <item>+250</item>
+        <item>+290</item>
+        <item>+508</item>
+        <item>+685</item>
+        <item>+378</item>
+        <item>+239</item>
+        <item>+966</item>
+        <item>+221</item>
+        <item>+381</item>
+        <item>+248</item>
+        <item>+232</item>
+        <item>+65</item>
+        <item>+421</item>
+        <item>+386</item>
+        <item>+677</item>
+        <item>+252</item>
+        <item>+27</item>
+        <item>+34</item>
+        <item>+94</item>
+        <item>+249</item>
+        <item>+597</item>
+        <item>+268</item>
+        <item>+46</item>
+        <item>+41</item>
+        <item>+963</item>
+        <item>+886</item>
+        <item>+992</item>
+        <item>+255</item>
+        <item>+66</item>
+        <item>+389</item>
+        <item>+228</item>
+        <item>+690</item>
+        <item>+676</item>
+        <item>+216</item>
+        <item>+90</item>
+        <item>+993</item>
+        <item>+688</item>
+        <item>+256</item>
+        <item>+380</item>
+        <item>+971</item>
+        <item>+44</item>
+        <item>+598</item>
+        <item>+998</item>
+        <item>+678</item>
+        <item>+58</item>
+        <item>+84</item>
+        <item>+681</item>
+        <item>+967</item>
+        <item>+381</item>
+        <item>+260</item>
+        <item>+263</item>
+        <item>+297</item>
+        <item>+229</item>
+        <item>+599</item>
+        <item>+246</item>
+        <item>+599</item>
+        <item>+379</item>
+        <item>+692</item>
+        <item>+680</item>
+        <item>+970</item>
+        <item>+590</item>
+        <item>+590</item>
+        <item>+211</item>
+        <item>+670</item>
+        <item>+382</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

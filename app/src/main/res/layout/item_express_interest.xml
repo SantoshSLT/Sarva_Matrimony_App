@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="7dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/five"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+                    <com.thegreentech.PorterShape.PorterShapeImageView
+                        android:id="@+id/imgProfilePicture"
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="@dimen/_115sdp"
+                        android:layout_gravity="left|center"
+                        app:siShape="@drawable/image_round_background"
+                        app:siSquare="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/imgProfilePicture"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvUserCode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/onezero"
+                            android:fontFamily="@font/poppinsregular"
+                            android:paddingRight="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_2sdp"
+                            android:text=""
+                            android:textColor="@color/lightblack1"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            android:id="@+id/tvDateTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="@dimen/_5sdp"
+                            android:fontFamily="@font/poppinsregular"
+                            android:gravity="right"
+                            android:text=""
+                            android:textColor="@color/lightblack1"
+                            android:textSize="@dimen/_10sdp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_minus5sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/colorOrange"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <TextView
+                        android:id="@+id/textTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="Express interest received"
+                        android:textColor="@color/lightblack1"
+                        android:fontFamily="@font/poppinsregular"
+                        android:textSize="@dimen/onetwo" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+                        <!--<TextView
+                            android:id="@+id/tvMessage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five"
+                            android:lines="3"
+                            android:text="Hi How are You?"
+                            android:textColor="@color/colorDarkGrayH"
+                            android:textSize="@dimen/onetwo" />-->
+                        <TextView
+                            android:id="@+id/tvMessage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinsregular"
+                            android:text="Status :"
+                            android:textColor="@color/lightblack1"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            android:id="@+id/tvStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text=""
+                            android:fontFamily="@font/poppinsregular"
+                            android:textColor="@color/colorOrange"
+                            android:textSize="@dimen/_10sdp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+<!--
+                    <LinearLayout
+                        android:id="@+id/llDelete"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:background="@drawable/bg_rounds_orange"
+                        android:gravity="center|top|left">
+
+                        <ImageView
+                            android:id="@+id/btnDelete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/_3sdp"
+                            android:src="@drawable/icn_delete"
+                            android:tint="@color/white" />
+                    </LinearLayout>
+-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llReminders"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_7sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/llAccept"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_orange_select"
+                            android:gravity="center|top|left">
+
+                            <TextView
+                                android:id="@+id/btnRequestAccepted"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg_orange_rounded__rectengle"
+                                android:fontFamily="@font/poppinsregular"
+                                android:paddingLeft="@dimen/_15sdp"
+                                android:paddingTop="@dimen/_5sdp"
+                                android:paddingRight="@dimen/_15sdp"
+                                android:paddingBottom="@dimen/_5sdp"
+                                android:text="ACCEPT"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/onezero" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/llReject"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_rounds_orange"
+                            android:gravity="center|top|left">
+
+                            <TextView
+                                android:id="@+id/btnRequestRejected"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg_orange_rounded__rectengle"
+                                android:fontFamily="@font/poppinsregular"
+                                android:paddingLeft="@dimen/_15sdp"
+                                android:paddingTop="@dimen/_5sdp"
+                                android:paddingRight="@dimen/_15sdp"
+                                android:paddingBottom="@dimen/_5sdp"
+                                android:text="REJECT"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/onezero" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+<!--
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    card_view:cardCornerRadius="5dp"
+    android:layout_marginTop="@dimen/five"
+    android:id="@+id/cardView"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/five"
+            android:layout_marginLeft="@dimen/ninezero"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Prianka"
+                android:textSize="@dimen/onetwo"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/tvUserCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GT12345"
+                android:textSize="@dimen/nine"
+                android:paddingLeft="@dimen/five"
+                android:paddingRight="@dimen/five"
+                android:paddingTop="@dimen/one"
+                android:paddingBottom="@dimen/one"
+                android:layout_marginLeft="@dimen/onezero"
+                android:background="@drawable/bg_orange_rounded__rectengle"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/tvDateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="13 Nov, 2017 05:30pm"
+                android:textSize="@dimen/onezero"
+                android:gravity="right"
+                android:layout_marginRight="@dimen/onezero"
+                android:textColor="@color/colorDarkGrayH"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/five"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgProfilePicture"
+                android:layout_width="@dimen/sevenzero"
+                android:layout_height="@dimen/sevenzero"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/five"
+                android:src="@drawable/photo_circle1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/onezero"
+                android:layout_marginRight="@dimen/onezero"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/textTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="INTEREST RECEIVED"
+                    android:textSize="@dimen/onetwo"
+                    android:textColor="@color/colorOrange" />
+
+                <TextView
+                    android:id="@+id/tvMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:lines="3"
+                    android:text="Hi How are You?"
+                    android:textSize="@dimen/onetwo"
+                    android:textColor="@color/colorDarkGrayH" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/five"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="@dimen/fivefive"
+                android:layout_height="@dimen/fourtwo"
+                android:layout_centerVertical="true"
+                android:background="@drawable/delete_btn_orange" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnRequestAccepted"
+                    android:layout_width="@dimen/fivefive"
+                    android:layout_height="@dimen/fourtwo"
+                    android:visibility="gone"
+                    android:background="@drawable/accept_btn_red" />
+
+                <Button
+                    android:id="@+id/btnRequestRejected"
+                    android:layout_width="@dimen/fivefive"
+                    android:layout_height="@dimen/fourtwo"
+                    android:visibility="gone"
+                    android:layout_marginLeft="@dimen/onetwo"
+                    android:background="@drawable/reject_btn_red" />
+
+                <TextView
+                    android:id="@+id/tvStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Accepted"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/onefour"
+                    android:visibility="gone"
+                    android:textColor="@color/colorGreen" />
+
+                <Button
+                    android:id="@+id/btnRemaind"
+                    android:layout_width="@dimen/onetwozero"
+                    android:layout_height="@dimen/fourtwo"
+                    android:gravity="center"
+                    android:text=" REMINDER"
+                    android:visibility="gone"
+                    android:paddingLeft="@dimen/onefive"
+                    android:paddingRight="@dimen/onezero"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/onezero"
+                    android:background="@drawable/express_interes_activet" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+-->
+
+
+
+

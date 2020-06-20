@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:orientation="vertical">
+          
+        <ImageView
+            android:id="@+id/imgProfileImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/twotwozero"
+            android:src="@drawable/photo3"
+            android:layout_gravity="center_horizontal"
+			android:layout_margin="@dimen/onetwo"/>
+
+		    <LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_margin="@dimen/onefive"
+			    android:gravity="center_vertical"
+			    android:orientation="vertical">
+	            <LinearLayout
+	        		android:layout_width="fill_parent"
+	        		android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:gravity="center">
+			        <TextView
+			             android:id="@+id/textBrideName"
+			             android:layout_width="wrap_content"
+			             android:layout_height="wrap_content"
+			             android:textColor="@color/colorBlack"
+			             android:text="Priyanka "
+			             android:textSize="@dimen/onesix"/>
+
+					<ImageView
+						android:layout_width="@dimen/twozero"
+						android:layout_height="@dimen/twozero"
+						android:layout_marginLeft="@dimen/eight"
+						android:layout_marginRight="@dimen/eight"
+						android:src="@drawable/ic_heart"
+						android:visibility="gone"/>
+
+					<TextView
+						android:id="@+id/textGroomName"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textColor="@color/colorBlack"
+						android:text="Ranbeer"
+						android:textSize="@dimen/onesix"/>
+
+			     </LinearLayout>
+			     
+	             <TextView
+					 android:id="@+id/textAddress"
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content"
+					 android:textColor="@color/colorBlack"
+					 android:text="21 courporet sa, "
+					 android:layout_marginTop="@dimen/five"
+					 android:textSize="@dimen/onetwo"
+					 android:visibility="gone"/>
+
+
+				<TextView
+					android:id="@+id/textSuccessStory"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:textColor="@color/colorDarkGrayH"
+					android:text="21 courporet sa, "
+					android:layout_marginTop="@dimen/five"
+					android:textSize="@dimen/onetwo"
+					android:gravity="center"/>
+
+		      </LinearLayout>
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="@dimen/threethree"
+			android:visibility="gone">
+
+		</LinearLayout>
+
+     </LinearLayout>
+       
+</RelativeLayout>

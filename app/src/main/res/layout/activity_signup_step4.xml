@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/header1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/fivezero"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        app:cardCornerRadius="2.0dip"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgUserPhotos"
+                android:layout_width="match_parent"
+                android:layout_height="300.0dip"
+                android:src="@drawable/male"
+                android:visibility="visible"/>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/fivezero"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/onezero"
+        android:layout_margin="@dimen/onefive"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fourzero"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="@dimen/onezero"
+            android:layout_weight="1"
+            android:background="@drawable/bg_orange_rounded_rectengle"
+            android:paddingLeft="@dimen/twofive"
+            android:paddingTop="@dimen/five"
+            android:paddingRight="@dimen/twofive"
+            android:paddingBottom="@dimen/five"
+            android:text="SELECT PHOTO"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/onetwo" />
+
+        <Button
+            android:id="@+id/btnSkip"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fourzero"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/onezero"
+            android:layout_weight="1"
+            android:background="@drawable/bg_green_rounded_rectengle"
+            android:paddingLeft="@dimen/twofive"
+            android:paddingTop="@dimen/five"
+            android:paddingRight="@dimen/twofive"
+            android:paddingBottom="@dimen/five"
+            android:text="SKIP"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/onetwo" />
+    </LinearLayout>
+</LinearLayout>

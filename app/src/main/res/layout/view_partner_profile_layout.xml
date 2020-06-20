@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    app:cardCornerRadius="0dp"
+    android:layout_marginTop="@dimen/onezero"
+    app:cardUseCompatPadding="true">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fourzero"
+        android:text="Partner Preference"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorOrange"
+        android:textSize="@dimen/onefour"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgUserPhotos"
+            android:layout_width="@dimen/fourzero"
+            android:layout_height="@dimen/fourzero"
+            android:layout_margin="@dimen/onezero"
+            android:src="@drawable/ic_profile" />
+
+        <TextView
+            android:id="@+id/textMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Your profile matches with\n 5/ 19 of Priyanka's prefrences!"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:paddingLeft="@dimen/fivezero"
+            android:paddingRight="@dimen/fivezero"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/onetwo"/>
+
+        <ImageView
+            android:id="@+id/imgPartnerPhotos"
+            android:layout_width="@dimen/fourzero"
+            android:layout_height="@dimen/fourzero"
+            android:layout_margin="@dimen/onezero"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_profile" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="  BASIC PREFERENCES"
+                    android:drawableLeft="@drawable/ic_basic_details"
+                    android:layout_marginLeft="@dimen/five"
+                    android:layout_marginTop="@dimen/onezero"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="@dimen/onefour"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/five"
+                    android:layout_marginLeft="@dimen/onezero"
+                    android:layout_marginRight="@dimen/onezero"
+                    android:background="@color/colorGray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:paddingTop="@dimen/five"
+                    android:paddingLeft="@dimen/onezero"
+                    android:paddingRight="@dimen/onezero"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Marital Status"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/onetwo"/>
+
+                    <TextView
+                        android:id="@+id/textPMaritalStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=":  -"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorAA"
+                        android:textSize="@dimen/onetwo"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:paddingTop="@dimen/five"
+                    android:paddingLeft="@dimen/onezero"
+                    android:paddingRight="@dimen/onezero"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Age"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/onetwo"/>
+
+                    <TextView
+                        android:id="@+id/textPAge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=":  -"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorAA"
+                        android:textSize="@dimen/onetwo"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:paddingTop="@dimen/five"
+                    android:paddingLeft="@dimen/onezero"
+                    android:paddingRight="@dimen/onezero"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Height"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/onetwo"/>
+
+                    <TextView
+                        android:id="@+id/textPHeight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=":  -"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorAA"
+                        android:textSize="@dimen/onetwo"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:paddingTop="@dimen/five"
+                    android:paddingLeft="@dimen/onezero"
+                    android:paddingRight="@dimen/onezero"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Eating Habit"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/onetwo"/>
+
+                    <TextView
+                        android:id="@+id/textPDietHabite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=":  -"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorAA"
+                        android:textSize="@dimen/onetwo"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:paddingTop="@dimen/five"
+                    android:paddingLeft="@dimen/onezero"
+                    android:paddingRight="@dimen/onezero"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Smoking"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/onetwo"/>
+
+                    <TextView
+                        android:id="@+id/textPSmoking"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=":  -"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorAA"
+                        android:textSize="@dimen/onetwo"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:paddingTop="@dimen/five"
+                    android:paddingLeft="@dimen/onezero"
+                    android:paddingRight="@dimen/onezero"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Drinking"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/onetwo"/>
+
+                    <TextView
+                        android:id="@+id/textPDrinking"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=":  -"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorAA"
+                        android:textSize="@dimen/onetwo"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:paddingTop="@dimen/five"
+                    android:paddingLeft="@dimen/onezero"
+                    android:paddingRight="@dimen/onezero"
+                    android:paddingBottom="@dimen/onezero"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Physical Status"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/onetwo"/>
+
+                    <TextView
+                        android:id="@+id/textPPhysicalStates"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=":  -"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorAA"
+                        android:textSize="@dimen/onetwo"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/onezero">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="  EDUCATION PREFERENCES"
+                    android:drawableLeft="@drawable/ic_education_occupation"
+                    android:layout_marginLeft="@dimen/five"
+                    android:layout_marginTop="@dimen/onezero"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="@dimen/onefour"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/five"
+                    android:layout_marginLeft="@dimen/onezero"
+                    android:layout_marginRight="@dimen/onezero"
+                    android:background="@color/colorGray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:paddingTop="@dimen/onezero"
+                    android:paddingLeft="@dimen/onezero"
+                    android:paddingRight="@dimen/onezero"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Education"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/onetwo"/>
+
+                    <TextView
+                        android:id="@+id/textPHeighestEducation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=":  -"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorAA"
+                        android:textSize="@dimen/onetwo"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:paddingTop="@dimen/five"
+                    android:paddingLeft="@dimen/onezero"
+                    android:paddingRight="@dimen/onezero"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Annual Income"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/onetwo"/>
+
+                    <TextView
+                        android:id="@+id/textPAnnualIncome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=":  -"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorAA"
+                        android:textSize="@dimen/onetwo"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:paddingTop="@dimen/five"
+                    android:paddingLeft="@dimen/onezero"
+                    android:paddingRight="@dimen/onezero"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Employed In"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/onetwo"/>
+
+                    <TextView
+                        android:id="@+id/textPEmployedIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=":  -"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorAA"
+                        android:textSize="@dimen/onetwo"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:paddingTop="@dimen/five"
+                    android:paddingLeft="@dimen/onezero"
+                    android:paddingRight="@dimen/onezero"
+                    android:paddingBottom="@dimen/onezero"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Occupation"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/onetwo"/>
+
+                    <TextView
+                        android:id="@+id/textPOccupation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=":  -"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorAA"
+                        android:textSize="@dimen/onetwo"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/onezero">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="  RELIGIOUS PREFERENCES"
+                    android:drawableLeft="@drawable/ic_religion_info"
+                    android:layout_marginLeft="@dimen/five"
+                    android:layout_marginTop="@dimen/onezero"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="@dimen/onefour"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/five"
+                    android:layout_marginLeft="@dimen/onezero"
+                    android:layout_marginRight="@dimen/onezero"
+                    android:background="@color/colorGray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:paddingTop="@dimen/onezero"
+                    android:paddingLeft="@dimen/onezero"
+                    android:paddingRight="@dimen/onezero"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Religion"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/onetwo"/>
+
+                    <TextView
+                        android:id="@+id/textPReligion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=":  -"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorAA"
+                        android:textSize="@dimen/onetwo"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:paddingTop="@dimen/five"
+                    android:paddingLeft="@dimen/onezero"
+                    android:paddingRight="@dimen/onezero"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Caste"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/onetwo"/>
+
+                    <TextView
+                        android:id="@+id/textPCaste"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=":  -"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorAA"
+                        android:textSize="@dimen/onetwo"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:paddingTop="@dimen/five"
+                    android:paddingLeft="@dimen/onezero"
+                    android:paddingRight="@dimen/onezero"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Manglik"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/onetwo"/>
+
+                    <TextView
+                        android:id="@+id/textPManglik"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=":  -"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorAA"
+                        android:textSize="@dimen/onetwo"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:paddingTop="@dimen/five"
+                    android:paddingLeft="@dimen/onezero"
+                    android:paddingRight="@dimen/onezero"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Star"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/onetwo"/>
+
+                    <TextView
+                        android:id="@+id/textPStar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=":  -"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorAA"
+                        android:textSize="@dimen/onetwo"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:paddingTop="@dimen/five"
+                    android:paddingLeft="@dimen/onezero"
+                    android:paddingRight="@dimen/onezero"
+                    android:paddingBottom="@dimen/onezero"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Mother Tongue"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/onetwo"/>
+
+                    <TextView
+                        android:id="@+id/textPMotherTongue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=":  -"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorAA"
+                        android:textSize="@dimen/onetwo"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/onezero">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="  LOCATION PREFERENCES"
+                    android:drawableLeft="@drawable/ic_location"
+                    android:layout_marginLeft="@dimen/five"
+                    android:layout_marginTop="@dimen/onezero"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="@dimen/onefour"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/five"
+                    android:layout_marginLeft="@dimen/onezero"
+                    android:layout_marginRight="@dimen/onezero"
+                    android:background="@color/colorGray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:paddingTop="@dimen/onezero"
+                    android:paddingLeft="@dimen/onezero"
+                    android:paddingRight="@dimen/onezero"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Country"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/onetwo"/>
+
+                    <TextView
+                        android:id="@+id/textPCountery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=":  -"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorAA"
+                        android:textSize="@dimen/onetwo"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:paddingTop="@dimen/five"
+                    android:paddingLeft="@dimen/onezero"
+                    android:paddingRight="@dimen/onezero"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="State"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/onetwo"/>
+
+                    <TextView
+                        android:id="@+id/textPState"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=":  -"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorAA"
+                        android:textSize="@dimen/onetwo"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:paddingTop="@dimen/five"
+                    android:paddingLeft="@dimen/onezero"
+                    android:paddingBottom="@dimen/onezero"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/onezero">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="City"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/onetwo"/>
+
+                    <TextView
+                        android:id="@+id/textPCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=":  -"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorAA"
+                        android:textSize="@dimen/onetwo"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/onezero">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  PARTNER EXPECTATION"
+                android:drawableLeft="@drawable/ic_about_me"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_marginTop="@dimen/onezero"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorOrange"
+                android:textSize="@dimen/onefour"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/five"
+                android:layout_marginLeft="@dimen/onezero"
+                android:layout_marginRight="@dimen/onezero"
+                android:background="@color/colorGray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/onezero"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textPartnerExpectation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorAA"
+                    android:textSize="@dimen/onetwo"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+</LinearLayout>

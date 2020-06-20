@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "541603484899",
+    "firebase_url": "https://premium-matrimony.firebaseio.com",
+    "project_id": "premium-matrimony",
+    "storage_bucket": "premium-matrimony.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541603484899:android:25157298ef27fe0c",
+        "android_client_info": {
+          "package_name": "in.thegreentech.www"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "541603484899-8tef5af3qq0d2092a75ag40aja5di6k8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.thegreentech.www",
+            "certificate_hash": "afe31197d1c6dc014405bbdca6dc36feb22fac07"
+          }
+        },
+        {
+          "client_id": "541603484899-hcv62lqdk89vpb7k0htklrj72g7768b5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaFPbcogYDyZ7YbV8du6yp7nChUjf7PbQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "541603484899-hcv62lqdk89vpb7k0htklrj72g7768b5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

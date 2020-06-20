@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.thegreentech.MainActivity">
+    <item
+        android:icon="@drawable/ic_block1"
+        android:title="Block"/>
+    <!--<item-->
+        <!--android:id="@+id/close_registration"-->
+        <!--android:icon="@drawable/ic_membership"-->
+        <!--android:title="Report Abuse"/>-->
+
+</menu>

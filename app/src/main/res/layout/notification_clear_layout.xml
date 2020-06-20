@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_margin="@dimen/_10sdp"
+    android:elevation="@dimen/_7sdp"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/_7sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/_20sdp"
+            android:paddingLeft="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/poppinsmedium"
+                android:singleLine="true"
+                android:text="Want to clear all Notification?"
+                android:textColor="@color/lightblack1"
+                android:textSize="@dimen/_14sdp" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_15sdp">
+
+                <TextView
+                    android:id="@+id/btncancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/bg_orange_rounded_rectengle"
+                    android:elevation="10dp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="CANCEL"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp" />
+                <TextView
+                    android:id="@+id/btnOk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/bg_orange_rounded_rectengle"
+                    android:elevation="10dp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:text="  OK  "
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+            <!--
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/onefive">
+
+                            <Button
+                                android:id="@+id/btnSubmit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/fourzero"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/twozero"
+                                android:layout_marginRight="@dimen/five"
+                                android:background="@drawable/bg_orange_rounded_rectengle"
+                                android:elevation="10dp"
+                                android:paddingLeft="@dimen/twofive"
+                                android:paddingRight="@dimen/twofive"
+                                android:paddingBottom="@dimen/five"
+                                android:text="Submit"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/onefour" />
+
+                            <Button
+                                android:id="@+id/btnHavePassword"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/fourzero"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginLeft="@dimen/five"
+                                android:layout_marginTop="@dimen/twozero"
+                                android:background="@drawable/bg_orange_rounded_rectengle"
+                                android:elevation="10dp"
+                                android:paddingLeft="@dimen/onefive"
+                                android:paddingRight="@dimen/onefive"
+                                android:paddingBottom="@dimen/five"
+                                android:text="Click here if you have Password"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/onefour" />
+
+                        </LinearLayout>
+            -->
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
