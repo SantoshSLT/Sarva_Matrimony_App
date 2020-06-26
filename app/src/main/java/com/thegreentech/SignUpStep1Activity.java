@@ -224,6 +224,8 @@ public class SignUpStep1Activity extends AppCompatActivity {
         tvTC = findViewById(R.id.tvTC);
 
         textClose = findViewById(R.id.textClose);
+
+
     }
 
     public ArrayList<String> getList() {

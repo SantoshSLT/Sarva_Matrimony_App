@@ -60,6 +60,7 @@ import okhttp3.MediaType;
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 import retrofit2.Call;
+import retrofit2.Response;
 import utills.AppConstants;
 import utills.NetworkConnection;
 
@@ -270,7 +271,8 @@ public class ManagePhotoActivity extends AppCompatActivity {
                                         });
 
                                 relZoomImageView.setVisibility(View.VISIBLE);
-                            } else {
+                            }
+                            else {
                                 Toast.makeText(ManagePhotoActivity.this, "Image not available.", Toast.LENGTH_SHORT).show();
                                 progressBar.setVisibility(View.GONE);
                             }
@@ -545,17 +547,33 @@ public class ManagePhotoActivity extends AppCompatActivity {
         progressDialogSendReq.setIndeterminate(true);
         progressDialogSendReq.show();
 
-        RequestBody user_id = RequestBody.create(MediaType.parse("text/plain"), strUserId);
-        RequestBody index = RequestBody.create(MediaType.parse("text/plain"), PhotoId);
 
         File file = new File(strfilePath);
         Log.d("ravi", "file is = " + file.toString());
+
+        RequestBody user_id = RequestBody.create(MediaType.parse("text/plain"), strUserId);
+        RequestBody index = RequestBody.create(MediaType.parse("text/plain"), PhotoId);
 
         RequestBody requestFile = RequestBody.create(MediaType.parse("image/*"), file);
         MultipartBody.Part image = MultipartBody.Part.createFormData("image_path", file.getName(), requestFile);
 
 
         Call<ProfileManagePhotoResponse> call = apiService.postManagePhotoProfile(user_id, image, index);// uplaod_photo.php
+
+
+
+//        retrofit2.Call<ProfileManagePhotoResponse> req = apiService.postManagePhotoProfile(user_id, image, index);
+//        req.enqueue(new Callback<ProfileManagePhotoResponse>() {
+//            @Override
+//            public void onResponse(Call<ProfileManagePhotoResponse> call, Response<ProfileManagePhotoResponse> response) {
+//                // Do Something
+//            }
+//
+//            @Override
+//            public void onFailure(Call<ProfileManagePhotoResponse> call, Throwable t) {
+//                t.printStackTrace();
+//            }
+//        });
 
 
         call.enqueue(new retrofit2.Callback<ProfileManagePhotoResponse>() {

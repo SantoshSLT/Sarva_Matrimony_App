@@ -176,15 +176,15 @@
                                 >
 
                                 <ImageView
-                                    android:layout_width="@dimen/_35sdp"
-                                    android:layout_height="@dimen/_35sdp"
+                                    android:layout_width="44dp"
+                                    android:layout_height="44dp"
                                     android:layout_gravity="center|bottom"
-                                    android:tint="@color/white"
-                                    android:layout_marginTop="@dimen/_10sdp"
                                     android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_10sdp"
                                     android:layout_marginRight="@dimen/_10sdp"
                                     android:layout_marginBottom="@dimen/_15sdp"
-                                    android:src="@drawable/ic_photoes" />
+                                    android:src="@drawable/ic_photoes"
+                                    android:tint="@color/white" />
 
                                 <TextView
                                     android:id="@+id/tvPhotoCounter"

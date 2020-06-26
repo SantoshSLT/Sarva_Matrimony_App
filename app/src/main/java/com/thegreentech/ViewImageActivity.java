@@ -16,6 +16,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
+import com.theartofdev.edmodo.cropper.CropImage;
+import com.theartofdev.edmodo.cropper.CropImageView;
 
 import org.json.JSONObject;
 
@@ -43,32 +45,33 @@ import utills.NetworkConnection;
 public class ViewImageActivity extends AppCompatActivity {
 
     RecyclerView rvImage;
-    String matriID="";
+    String matriID = "";
     ImageView btnBack;
-    TextView textviewHeaderText,textviewSignUp;
+    TextView textviewHeaderText, textviewSignUp;
     RelativeLayout rlToolbar;
     ViewPager viewPager;
-    ImageView btnPrev,btnNext;
+    ImageView btnPrev, btnNext;
     private ArrayList<beanPhotos> arrPhotosList;
     ProfilePhotoViewAdapter adapter;
     String type;
+
+    String photo2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.view_image);
+
         matriID = getIntent().getStringExtra("MATRIiD");
         type = getIntent().getStringExtra("me");
         initilize();
         onclick();
 
-
-        if (NetworkConnection.hasConnection(ViewImageActivity.this)){
+        if (NetworkConnection.hasConnection(ViewImageActivity.this)) {
 
             getAllProfileImage(matriID);
 
-        }else
-        {
+        } else {
             AppConstants.CheckConnection(ViewImageActivity.this);
         }
 
@@ -76,11 +79,11 @@ public class ViewImageActivity extends AppCompatActivity {
     }
 
 
-    public void  initilize(){
+    public void initilize() {
 
-        btnBack=(ImageView)findViewById(R.id.btnBack);
-        textviewHeaderText=(TextView)findViewById(R.id.textviewHeaderText);
-        textviewSignUp=(TextView)findViewById(R.id.textviewSignUp);
+        btnBack = (ImageView) findViewById(R.id.btnBack);
+        textviewHeaderText = (TextView) findViewById(R.id.textviewHeaderText);
+        textviewSignUp = (TextView) findViewById(R.id.textviewSignUp);
 
         textviewHeaderText.setText(matriID);
         btnBack.setVisibility(View.VISIBLE);
@@ -102,21 +105,31 @@ public class ViewImageActivity extends AppCompatActivity {
             intent.putExtra("Fragments", "ProfileEdit");
             startActivity(intent);
             finish();
-        }
-        else if (type.equalsIgnoreCase("me"))
-        {
+        } else if (type.equalsIgnoreCase("me")) {
             Intent intent = new Intent(ViewImageActivity.this, MemberViewProfile.class);
             startActivity(intent);
             finish();
         }
+
     }
 
-    public void onclick(){
+    public void onclick() {
+
+        textviewSignUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ViewImageActivity.this, ManagePhotoActivity.class);
+                startActivity(intent);
+                finish();
+
+            }
+        });
+
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-               onBackPressed();
+                onBackPressed();
             }
         });
 
@@ -141,15 +154,13 @@ public class ViewImageActivity extends AppCompatActivity {
         viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-                if (position==0){
+                if (position == 0) {
                     btnPrev.setVisibility(View.GONE);
                     btnNext.setVisibility(View.VISIBLE);
-                }
-                else if (position==arrPhotosList.size()-1){
+                } else if (position == arrPhotosList.size() - 1) {
                     btnNext.setVisibility(View.GONE);
                     btnPrev.setVisibility(View.VISIBLE);
-                }
-                else{
+                } else {
                     btnPrev.setVisibility(View.VISIBLE);
                     btnNext.setVisibility(View.VISIBLE);
                 }
@@ -169,37 +180,30 @@ public class ViewImageActivity extends AppCompatActivity {
     }
 
 
-    private void getAllProfileImage(String strMatriId)
-    {
+    private void getAllProfileImage(String strMatriId) {
 
 
-        class SendPostReqAsyncTask extends AsyncTask<String, Void, String>
-        {
+        class SendPostReqAsyncTask extends AsyncTask<String, Void, String> {
             @Override
-            protected String doInBackground(String... params)
-            {
+            protected String doInBackground(String... params) {
                 String paramsMatriId = params[0];
 
                 HttpClient httpClient = new DefaultHttpClient();
 
-                String URL= AppConstants.MAIN_URL +"view_photo.php";
-                Log.e("matri_search", "== "+URL);
+                String URL = AppConstants.MAIN_URL + "view_photo.php";
+                Log.e("matri_search", "== " + URL);
 
                 HttpPost httpPost = new HttpPost(URL);
 
                 BasicNameValuePair MatriIdPair = new BasicNameValuePair("matri_id", paramsMatriId);
-
-
                 List<NameValuePair> nameValuePairList = new ArrayList<NameValuePair>();
                 nameValuePairList.add(MatriIdPair);
 
-                try
-                {
+                try {
                     UrlEncodedFormEntity urlEncodedFormEntity = new UrlEncodedFormEntity(nameValuePairList);
                     httpPost.setEntity(urlEncodedFormEntity);
-                    Log.e("Parametters Array=", "== "+(nameValuePairList.toString().trim().replaceAll(",","&")));
-                    try
-                    {
+                    Log.e("Parametters Array=", "== " + (nameValuePairList.toString().trim().replaceAll(",", "&")));
+                    try {
                         HttpResponse httpResponse = httpClient.execute(httpPost);
                         InputStream inputStream = httpResponse.getEntity().getContent();
                         InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
@@ -207,8 +211,7 @@ public class ViewImageActivity extends AppCompatActivity {
                         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
                         StringBuilder stringBuilder = new StringBuilder();
                         String bufferedStrChunk = null;
-                        while((bufferedStrChunk = bufferedReader.readLine()) != null)
-                        {
+                        while ((bufferedStrChunk = bufferedReader.readLine()) != null) {
                             stringBuilder.append(bufferedStrChunk);
                         }
 
@@ -217,8 +220,7 @@ public class ViewImageActivity extends AppCompatActivity {
                     } catch (ClientProtocolException cpe) {
                         System.out.println("Firstption caz of HttpResponese :" + cpe);
                         cpe.printStackTrace();
-                    } catch (IOException ioe)
-                    {
+                    } catch (IOException ioe) {
                         System.out.println("Secondption caz of HttpResponse :" + ioe);
                         ioe.printStackTrace();
                     }
@@ -233,56 +235,74 @@ public class ViewImageActivity extends AppCompatActivity {
             }
 
             @Override
-            protected void onPostExecute(String result)
-            {
+            protected void onPostExecute(String result) {
                 super.onPostExecute(result);
 
-                Log.e("view_photo", "=="+result);
+                Log.e("view_photo", "==" + result);
 
-                try
-                {
+                try {
                     JSONObject obj = new JSONObject(result);
 
-                    arrPhotosList= new ArrayList<beanPhotos>();
+                    arrPhotosList = new ArrayList<beanPhotos>();
 
-                    String status=obj.getString("status");
+                    String status = obj.getString("status");
 
-                    if (status.equalsIgnoreCase("1"))
-                    {
+                    if (status.equalsIgnoreCase("1")) {
 
                         JSONObject responseData = obj.getJSONObject("responseData");
                         JSONObject responseKey = responseData.getJSONObject("1");
 
-                        String photo1=responseKey.getString("photo1").toString().trim();
-                        String photo2=responseKey.getString("photo2").toString().trim();
-                        String photo3=responseKey.getString("photo3").toString().trim();
-                        String photo4=responseKey.getString("photo4").toString().trim();
-                        String photo5=responseKey.getString("photo5").toString().trim();
-                        String photo6=responseKey.getString("photo6").toString().trim();
+                        String photo1 = responseKey.getString("photo1").toString().trim();
+                        photo2 = responseKey.getString("photo2").toString().trim();
 
-                        arrPhotosList.add(new beanPhotos("1",photo1));
-                        arrPhotosList.add(new beanPhotos("2",photo2));
-                        arrPhotosList.add(new beanPhotos("3",photo3));
-                        arrPhotosList.add(new beanPhotos("4",photo4));
-                        arrPhotosList.add(new beanPhotos("5",photo5));
-                        arrPhotosList.add(new beanPhotos("6",photo6));
+                        if (photo2.equalsIgnoreCase("photo2")) {
 
-                        Log.e("sizeImages",arrPhotosList.size() +"");
-                        if(arrPhotosList.size() > 0)
-                        {
-                            adapter = new ProfilePhotoViewAdapter(ViewImageActivity.this,arrPhotosList);
-                            viewPager.setAdapter(adapter);
+                            Intent intent = new Intent(ViewImageActivity.this, LoginActivity.class);
+                            startActivity(intent);
+                            Log.e("first if", "if 1");
                         }
 
-                    }else
-                    {
-                        String msgError=obj.getString("message");
-                        Toast.makeText(ViewImageActivity.this,""+msgError,Toast.LENGTH_LONG).show();
+                        String photo3 = responseKey.getString("photo3").toString().trim();
+                        String photo4 = responseKey.getString("photo4").toString().trim();
+                        String photo5 = responseKey.getString("photo5").toString().trim();
+                        String photo6 = responseKey.getString("photo6").toString().trim();
+
+                        arrPhotosList.add(new beanPhotos("1", photo1));
+                        arrPhotosList.add(new beanPhotos("2", photo2));
+                        arrPhotosList.add(new beanPhotos("3", photo3));
+                        arrPhotosList.add(new beanPhotos("4", photo4));
+                        arrPhotosList.add(new beanPhotos("5", photo5));
+                        arrPhotosList.add(new beanPhotos("6", photo6));
+
+
+                        Log.e("sizeImages", arrPhotosList.size() + "");
+                        if (arrPhotosList.size() > 0) {
+                            adapter = new ProfilePhotoViewAdapter(ViewImageActivity.this, arrPhotosList);
+                            viewPager.setAdapter(adapter);
+
+                        }
+
+                        if (photo2.equalsIgnoreCase("photo2")) {
+
+                            Intent intent = new Intent(ViewImageActivity.this, LoginActivity.class);
+                            startActivity(intent);
+                            Log.e("first if", "if 1");
+                        }
+
+
+                    } else if (photo2.equalsIgnoreCase("photo2")) {
+
+                        Intent intent = new Intent(ViewImageActivity.this, LoginActivity.class);
+                        startActivity(intent);
+
+                        Log.e("second if", "if 2 ");
+                    } else {
+                        String msgError = obj.getString("message");
+                        Toast.makeText(ViewImageActivity.this, "" + msgError, Toast.LENGTH_LONG).show();
                     }
 
-                } catch (Throwable t)
-                {
-                  Log.e("Errrrrr",t.getMessage());
+                } catch (Throwable t) {
+                    Log.e("Errrrrr", t.getMessage());
                 }
             }
         }

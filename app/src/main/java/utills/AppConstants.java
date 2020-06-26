@@ -22,7 +22,7 @@ import cz.msebera.android.httpclient.Header;
 
 public class AppConstants {
 
-  public static String BASE_URL ="http://sarvamatrimony.com/demo1/";
+  public static String BASE_URL ="https://sarvamatrimony.com/demo1/";
   // public static String BASE_URL = "http://matrimonialphpscript.com/premium-demo/";
    public static String MAIN_URL = BASE_URL+"api/";
   //  public static String MAIN_URL = BASE_URL;
@@ -46,7 +46,7 @@ public class AppConstants {
 
 
     //-------Push Notifications-------//
-    public static String Action_MessageRecived = "CHAT_RECIVED";
+    public static String Action_MessageRecived = "CHAT_RECEIVED";
     //-------------------------------//
     public static String SELECTED_TAB_MAIN="MainTab";
     public static String SELECTED_TAB_HOME="HomeTab";

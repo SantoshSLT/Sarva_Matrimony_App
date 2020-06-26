@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.net.ConnectivityManager;
 import android.os.Build;
 import android.os.Handler;
 import android.preference.PreferenceManager;
@@ -72,8 +73,20 @@ public class LaunchActivity extends AppCompatActivity {
         }, SPLASH_DISPLAY_LENGTH);
 
         FirebaseApp.initializeApp(this);
+
+        if(!isNetworkAvailable(this)) {
+            Toast.makeText(this,"No Internet connection",Toast.LENGTH_LONG).show();
+            finish(); //Calling this method to close this activity when internet is not available.
+        }
     }
 
+    public static boolean isNetworkAvailable(Context context) {
+        ConnectivityManager conMan = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        if(conMan.getActiveNetworkInfo() != null && conMan.getActiveNetworkInfo().isConnected())
+            return true;
+        else
+            return false;
+    }
 
     void getToken() {
         FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {

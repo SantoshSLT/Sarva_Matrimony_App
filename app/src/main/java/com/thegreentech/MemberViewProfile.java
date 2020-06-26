@@ -145,6 +145,7 @@ public class MemberViewProfile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_member_view_profile);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.icon_arrow_left));
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {

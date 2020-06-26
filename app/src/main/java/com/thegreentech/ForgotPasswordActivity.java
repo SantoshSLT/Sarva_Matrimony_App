@@ -229,9 +229,4 @@ public class ForgotPasswordActivity extends AppCompatActivity
         sendPostReqAsyncTask.execute(EmailId);
     }
 
-
-
-
-
-
 }

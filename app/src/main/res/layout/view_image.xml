@@ -19,7 +19,7 @@
             android:layout_width="fill_parent"
             android:layout_height="@dimen/fivezero"
             android:visibility="visible"
-            layout="@layout/header1" />
+            layout="@layout/header_add_images" />
 
     </LinearLayout>
     <android.support.v4.view.ViewPager

@@ -55,7 +55,7 @@
             android:lines="1"
             android:paddingTop="@dimen/two"
             android:paddingRight="@dimen/onezero"
-            android:text="Sign Up"
+            android:text="Add Images"
             android:textColor="@color/colorWhite"
             android:textSize="@dimen/onetwo"
             android:visibility="visible" />

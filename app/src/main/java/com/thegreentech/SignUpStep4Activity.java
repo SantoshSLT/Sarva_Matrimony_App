@@ -205,6 +205,7 @@ public class SignUpStep4Activity extends AppCompatActivity
                     Myprefrence.putMyrefralLink(getApplicationContext(),"");
 
                     SharedPreferences.Editor editor=prefUpdate.edit();
+
                     editor.putString("user_id_r","");
                     editor.putString("otp","");
                     editor.putString(AppConstants.MOBILE_NO,"");
@@ -261,7 +262,10 @@ public class SignUpStep4Activity extends AppCompatActivity
                 strFilePath  = result.getUri().toString().replace("file://", "" );
                 Log.e("Gallary myBase64Image= ", " "+strFilePath);
 
-            } else if (resultCode == CropImage.CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE) {
+           }
+
+
+            else if (resultCode == CropImage.CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE) {
                 Toast.makeText(this, "Cropping failed: " + result.getError(), Toast.LENGTH_LONG).show();
             }
         }
@@ -280,6 +284,7 @@ public class SignUpStep4Activity extends AppCompatActivity
         progressDialogSendReq.show();
 
         RequestBody user_id = RequestBody.create(MediaType.parse("text/plain"), strUserId);
+
         //RequestBody fname = RequestBody.create(MediaType.parse("text/plain"), strFirstname);
 
         File file = new File(strfilePath);
@@ -287,6 +292,9 @@ public class SignUpStep4Activity extends AppCompatActivity
 
         RequestBody requestFile = RequestBody.create(MediaType.parse("image/*"), file);
         MultipartBody.Part image = MultipartBody.Part.createFormData("image_path", file.getName(), requestFile);
+
+      //  Call<ProfileUpdateResponse> call= apiService.postUpdateProfile(user_id,image);
+
         Call<ProfileUpdateResponse> call= apiService.postUpdateProfile(user_id,image);
 
         call.enqueue(new retrofit2.Callback<ProfileUpdateResponse>() {
@@ -311,7 +319,9 @@ public class SignUpStep4Activity extends AppCompatActivity
                     alert = builder.create();
                     alert.show();
 
-                }else
+                }
+
+                else
                 {
                     String msgError=updateProfileResponse.getMessage();
                     AlertDialog.Builder builder = new AlertDialog.Builder(SignUpStep4Activity.this);
@@ -331,14 +341,11 @@ public class SignUpStep4Activity extends AppCompatActivity
             @Override
             public void onFailure(Call<ProfileUpdateResponse> call, Throwable t) {
 
+                Toast.makeText(SignUpStep4Activity.this,"Service error",Toast.LENGTH_LONG).show();
             }
         });
 
 
     }
-
-
-
-
 
 }
