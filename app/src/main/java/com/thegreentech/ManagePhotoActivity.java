@@ -133,7 +133,7 @@ public class ManagePhotoActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        //getHoroscopeRequest(matri_id);
+      //getHoroscopeRequest(matri_id);
     }
 
     @Override

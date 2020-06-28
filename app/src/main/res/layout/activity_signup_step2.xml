@@ -70,6 +70,7 @@ android:orientation="vertical">
                 android:text="ACCOUNT DETAILS"
                 android:fontFamily="@font/poppinsregular"
                 android:textSize="@dimen/_14sdp" />
+
         </LinearLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -296,25 +297,25 @@ android:orientation="vertical">
         </android.support.design.widget.TextInputLayout>
 
 
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/onezero"
-            android:theme="@style/EditTextviewStyle">
+<!--        <android.support.design.widget.TextInputLayout-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/onezero"-->
+<!--            android:theme="@style/EditTextviewStyle">-->
 
-            <EditText
-                android:id="@+id/edtSubCaste"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:drawableRight="@drawable/icon_next_spinner"
-                android:focusable="false"
-                android:hint="SUB CASTE"
-                android:inputType="textCapWords"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:fontFamily="@font/poppinsregular"
-                android:textSize="@dimen/_12sdp"/>
-        </android.support.design.widget.TextInputLayout>
+<!--            <EditText-->
+<!--                android:id="@+id/edtSubCaste"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:drawableRight="@drawable/icon_next_spinner"-->
+<!--                android:focusable="false"-->
+<!--                android:hint="SUB CASTE"-->
+<!--                android:inputType="textCapWords"-->
+<!--                android:maxLines="1"-->
+<!--                android:singleLine="true"-->
+<!--                android:fontFamily="@font/poppinsregular"-->
+<!--                android:textSize="@dimen/_12sdp"/>-->
+<!--        </android.support.design.widget.TextInputLayout>-->
 
 
         <android.support.design.widget.TextInputLayout

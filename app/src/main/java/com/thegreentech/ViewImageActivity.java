@@ -87,7 +87,7 @@ public class ViewImageActivity extends AppCompatActivity {
 
         textviewHeaderText.setText(matriID);
         btnBack.setVisibility(View.VISIBLE);
-        textviewSignUp.setVisibility(View.GONE);
+        textviewSignUp.setVisibility(View.VISIBLE);
 
         viewPager = findViewById(R.id.viewpager);
         btnNext = findViewById(R.id.btnNext);

@@ -2,7 +2,7 @@ package RoboPOJO;
 
 import com.google.gson.annotations.SerializedName;
 
-public class ProfileManagePhotoResponse{
+public class ProfileManagePhotoResponse {
 
 	@SerializedName("image")
 	private String image;

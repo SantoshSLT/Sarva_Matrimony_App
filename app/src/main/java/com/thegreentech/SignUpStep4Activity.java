@@ -295,6 +295,8 @@ public class SignUpStep4Activity extends AppCompatActivity
 
       //  Call<ProfileUpdateResponse> call= apiService.postUpdateProfile(user_id,image);
 
+
+
         Call<ProfileUpdateResponse> call= apiService.postUpdateProfile(user_id,image);
 
         call.enqueue(new retrofit2.Callback<ProfileUpdateResponse>() {

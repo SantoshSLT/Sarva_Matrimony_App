@@ -257,7 +257,7 @@ public class SignUpStep2Activity extends AppCompatActivity {
         linMotherTongue = (LinearLayout) findViewById(R.id.linMotherTongue);
         edtSearchMotherTongue = findViewById(R.id.edtSearchMotherTongue);
         rvDosh = findViewById(R.id.rvDoshType);
-        edtSubCaste = findViewById(R.id.edtSubCaste);
+       // edtSubCaste = findViewById(R.id.edtSubCaste);
         edtMaritalStatus = (EditText) findViewById(R.id.edtMaritalStatus);
         edtState = (EditText) findViewById(R.id.edtState);
         edtCity = (EditText) findViewById(R.id.edtCity);
@@ -385,18 +385,18 @@ public class SignUpStep2Activity extends AppCompatActivity {
         getGeneralData();
 
 
-        edtSubCaste.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                VisibleSlidingDrower();
-                linSBCaste.setVisibility(View.VISIBLE);
-                linGeneralView.setVisibility(View.GONE);
-                btnConfirm.setVisibility(View.GONE);
-                rvGeneralView.setAdapter(null);
-                getSubCasteRequest();
-                getSubCaste();
-            }
-        });
+//        edtSubCaste.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                VisibleSlidingDrower();
+//                linSBCaste.setVisibility(View.VISIBLE);
+//                linGeneralView.setVisibility(View.GONE);
+//                btnConfirm.setVisibility(View.GONE);
+//                rvGeneralView.setAdapter(null);
+//                getSubCasteRequest();
+//                getSubCaste();
+//            }
+//        });
 
         SlidingMenu();
 
@@ -404,7 +404,7 @@ public class SignUpStep2Activity extends AppCompatActivity {
         getStates();
 
 
-        getAdditionalDgree();
+      //  getAdditionalDgree();
         getOccupations();
 
         btnBack.setOnClickListener(new View.OnClickListener() {
@@ -473,15 +473,15 @@ public class SignUpStep2Activity extends AppCompatActivity {
                         && hasData(BodyType)
                         && hasData(PhysicalStatus)
                         && hasData(AppConstants.EducationId)
-                        && hasData(AppConstants.AditionalEducationId)
+                      //  && hasData(AppConstants.AditionalEducationId)
                         && hasData(AppConstants.OccupationID)
                         && hasData(EmployedIn)
                         && hasData(AnnualIncome)
                         && hasData(Diet)
                         && hasData(Smoking)
                         && hasData(Drinking)
-                        && hasData(HaveDosh)
-                        && hasData(Star) && hasData(Rassi) && hasData(BirthTime) && hasData(BirthPlace)
+                      //  && hasData(HaveDosh)
+                      //  && hasData(Star) && hasData(Rassi) && hasData(BirthTime) && hasData(BirthPlace)
                         && hasData(Status) && hasData(Type) && hasData(Values) && hasData(NoOfBrothers) &&
                         hasData(NoOfSisters) && hasData(OtherInformatio)
                         && hasData(password))
@@ -2109,7 +2109,8 @@ public class SignUpStep2Activity extends AppCompatActivity {
                                 }
                             });
                             Log.e("subcastarraydown", arrMotherTongue.size() + "");
-                            motherTongueAdapter = new SubCastAdapter(SignUpStep2Activity.this, arrMotherTongue, SlidingDrawer, Slidingpage, edtSubCaste);
+                          //  motherTongueAdapter = new SubCastAdapter(SignUpStep2Activity.this, arrMotherTongue, SlidingDrawer, Slidingpage, edtSubCaste);
+                          //  motherTongueAdapter = new SubCastAdapter(SignUpStep2Activity.this, arrMotherTongue, SlidingDrawer, Slidingpage);
                             rvSBCaste.setAdapter(motherTongueAdapter);
 
                         }
@@ -2131,29 +2132,29 @@ public class SignUpStep2Activity extends AppCompatActivity {
         sendPostReqAsyncTask.execute();
     }
 
-    public void getSubCaste() {
-        try {
-            edtSubCaste.addTextChangedListener(new TextWatcher() {
-                public void onTextChanged(CharSequence cs, int arg1, int arg2, int arg3) {
-                    if (arrMotherTongue.size() > 0) {
-                        String charcter = cs.toString();
-                        String text = edtSubCaste.getText().toString().toLowerCase(Locale.getDefault());
-                        motherTongueAdapter.filter(text);
-                    }
-                }
-
-                public void beforeTextChanged(CharSequence arg0, int arg1, int arg2, int arg3) {
-                }
-
-                public void afterTextChanged(Editable arg0) {
-                }
-            });
-        } catch (Exception e) {
-
-        }
-
-
-    }
+//    public void getSubCaste() {
+//        try {
+//            edtSubCaste.addTextChangedListener(new TextWatcher() {
+//                public void onTextChanged(CharSequence cs, int arg1, int arg2, int arg3) {
+//                    if (arrMotherTongue.size() > 0) {
+//                        String charcter = cs.toString();
+//                        String text = edtSubCaste.getText().toString().toLowerCase(Locale.getDefault());
+//                        motherTongueAdapter.filter(text);
+//                    }
+//                }
+//
+//                public void beforeTextChanged(CharSequence arg0, int arg1, int arg2, int arg3) {
+//                }
+//
+//                public void afterTextChanged(Editable arg0) {
+//                }
+//            });
+//        } catch (Exception e) {
+//
+//        }
+//
+//
+//    }
 
 
     private void getRegistationSteps2(String strMaritalStatus, String strNoOfChildren, String strWillingToMarry, String strStateId, String strCityId,
